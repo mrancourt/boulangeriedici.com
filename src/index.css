@@ -1,13 +1,107 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  cursor: pointer;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  monospace;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255,255,255,.5);
+  width: 100%;
+  height: 80px;
+  padding: 0 200px;
+}
+
+.content {
+  min-height: calc(100vh - 140px);;
+}
+
+.header-fill {
+  height: 80px;
+}
+
+.features-showcase .card {
+  min-height: 300px;
+}
+
+.Categories .filter-body .card {
+  cursor: pointer;
+}
+
+.Categories .filter-body .card:hover {
+  outline: 1px solid #ddd;
+}
+
+.Categories .card {
+  margin-bottom: 20px;
+}
+
+.card {
+  position: relative;
+  border: 0;
+  box-shadow: 0 0.25rem 1rem rgba(48,55,66,.15);
+}
+
+.card-body {
+  border-radius: 3px;
+  background-color: rgba(240,240,240,.8);
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 100px;
+}
+
+.section {
+  padding: 3rem;
+}
+
+.section .sm {
+  padding: 1rem 3rem;
+}
+
+.section-features {
+  padding: 6rem .5rem;
+}
+
+.navshadow {
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+}
+
+.blur-animation {
+  animation: blur 600ms;
+}
+
+.pain1 {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+  background-image: url(./images/pain1.jpg);
+  background-size: 100% auto;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(5px);
+    opacity: 0;
+  }
+  50% {
+    filter: blur(3px)
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
