@@ -40,6 +40,100 @@ function App() {
           </div>
         </ParallaxBanner>
 
+        <section id="histoire" className="light">
+          <div className="container">
+            <h2>Notre Histoire</h2>
+            <div className="columns">
+              <div className="col-sm-12 col-md-12 col-lg-8 col-xl-6 col-4 col-mx-auto">
+                <div className="timeline">
+                  <div className="timeline-item" id="timeline-example-1">
+                    <div className="timeline-left">
+                      <a className="timeline-icon tooltip"
+                         data-tooltip="Fondation - Février 1997">
+                      </a>
+                    </div>
+                    <div className="timeline-content">
+                      <div className="tile">
+                        <div className="tile-content">
+                          <p className="tile-subtitle">Février 1997</p>
+                          <p className="tile-title">
+                            La Boulangerie d'ici, en activité depuis le 7 février
+                            1997
+                          </p>
+                          <p className="tile-title">
+                            Se spécialise dans la confection du pain au
+                            levain. Caractérisé par son goût légèrement
+                            acidulé, le pain au levain est plus facile à digérer
+                            et se conserve plus longtemps que les pains à la
+                            levure, naturellement, sans agent de
+                            conservation.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="timeline-item" id="timeline-example-2">
+                    <div className="timeline-left">
+                      <a className="timeline-icon icon-lg tooltip"
+                         data-tooltip="February 2017">
+                      </a>
+                    </div>
+                    <div className="timeline-content">
+                      <div className="tile">
+                        <div className="tile-content">
+                          <p className="tile-subtitle">Lorem ipsum</p>
+                          <p className="tile-title">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Donec tempus venenatis libero eu sollicitudin.
+                            Vestibulum metus ex, pretium in accumsan a, fringilla in ipsum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="timeline-item" id="timeline-example-3">
+                    <div className="timeline-left">
+                      <a className="timeline-icon icon-lg tooltip"
+                         data-tooltip="Transfert de propriété - Juillet 2019">
+                      </a>
+                    </div>
+                    <div className="timeline-content">
+                      <div className="tile">
+                        <div className="tile-content">
+                          <p className="tile-subtitle">Juillet 2019</p>
+                          <p className="tile-title">
+                            Pellentesque faucibus turpis odio, eu malesuada eros tristique sed.
+                            Curabitur tempor imperdiet elit ut condimentum.
+                            Curabitur dapibus nisl at metus efficitur convallis.
+                            Aenean id condimentum lorem.
+                            Pellentesque ornare nunc sit amet mauris auctor sodales.
+                            Nulla fermentum et elit in dignissim.
+                            In sagittis lorem sed mi consequat, eget blandit risus accumsan.
+                            Phasellus vestibulum ac sem eu eleifend. Integer a molestie mi, nec semper risus.
+                            Aliquam fermentum luctus sem, a pharetra turpis tristique pharetra.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <ParallaxBanner
+          layers={[
+            {
+              image: './images/pain3.jpg',
+              amount: -.9,
+            }
+          ]}
+          style={{
+            height: '300px',
+          }}
+        />
+
         <section id="points_de_vente" className="light">
           <div className="container">
             <h2 className="pos-title">
