@@ -1,107 +1,260 @@
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: local('Raleway-Regular'), url(./fonts/Raleway-Regular.ttf) format('woff');
+}
+
+@font-face {
+    font-family: 'Aerolitecpone';
+    src: local('Aerolitecpone'), url(./fonts/aerolitecpone.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'Sardonyx';
+    src: local('Sardonyx'), url(./fonts/Sardonyx.otf) format('woff');
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-  sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: "Raleway-Regular";
 }
 
 a {
-  cursor: pointer;
+    border: none!important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-  monospace;
+h1 {
+    font-size: 90px;
+    margin-bottom: 0;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  background-color: rgba(255,255,255,.5);
-  width: 100%;
-  height: 80px;
-  padding: 0 200px;
+h2 {
+    margin-bottom: 0;
 }
 
-.content {
-  min-height: calc(100vh - 140px);;
+h2 a {
+    color: #fff;
+    text-decoration: none!important;
+    position: relative;
 }
 
-.header-fill {
-  height: 80px;
+h2 a:hover {
+    opacity: .8;
 }
 
-.features-showcase .card {
-  min-height: 300px;
+h2 a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F3A83C;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out 0s;
+}
+h2 a:hover:before  {
+    visibility: visible;
+    transform: scaleX(1);
 }
 
-.Categories .filter-body .card {
-  cursor: pointer;
+h4 {
+    border-bottom: 1px solid #65411D;
 }
 
-.Categories .filter-body .card:hover {
-  outline: 1px solid #ddd;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway-Regular", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.Categories .card {
-  margin-bottom: 20px;
+.principal {
+    height: 900px;
 }
 
-.card {
-  position: relative;
-  border: 0;
-  box-shadow: 0 0.25rem 1rem rgba(48,55,66,.15);
+.header {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: "Raleway-Regular", sans-serif;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.card-body {
-  border-radius: 3px;
-  background-color: rgba(240,240,240,.8);
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
-  top: 100px;
+.brand {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.section {
-  padding: 3rem;
+.brand h1 {
+    font-size:10vw;
 }
 
-.section .sm {
-  padding: 1rem 3rem;
+.brand h1 .logo_1 {
+    color: #65411D;
+    text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+    font-family: "Sardonyx", sans-serif;
+    margin-right: 15px;
 }
 
-.section-features {
-  padding: 6rem .5rem;
+.brand h1 .logo_2 {
+    color: #F3A83C;
+    text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+    font-family: "Aerolitecpone", sans-serif;
 }
 
-.navshadow {
-  box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+section {
+    padding: 60px;
 }
 
-.blur-animation {
-  animation: blur 600ms;
+section .container {
+    max-width: 1200px;
+    margin: auto;
 }
 
-.pain1 {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-  background-image: url(./images/pain1.jpg);
-  background-size: 100% auto;
+section.light {
+    color: #000;
+    background-color: rgb(234, 223, 220);
 }
 
-@keyframes blur {
-  0% {
-    filter: blur(5px);
-    opacity: 0;
-  }
-  50% {
-    filter: blur(3px)
-  }
-  100% {
-    filter: blur(0px);
-    opacity: 1;
-  }
+section.dark {
+    background-color: rgb(234, 223, 220);
+}
+
+.location {
+    max-width: 400px;
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #65411D;
+}
+
+.pos-title {
+    margin-bottom: 20px;
+}
+
+.point-of-sale .title {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.point-of-sale .address {
+    color: #404040;
+}
+
+footer {
+    color: #fff;
+    background-color: #1d191a;
+    min-height: 260px;
+    padding-top: -60px;
+}
+
+footer a {
+    color: #F3A83C;
+}
+
+footer a:hover {
+    color: #F3A83C;
+}
+
+footer .title {
+    font-weight: bold;
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px;
+}
+
+footer .column {
+    margin-bottom: 20px;
+}
+
+.timeline .timeline-item {
+    display: flex;
+    display: -ms-flexbox;
+    margin-bottom: 1.2rem;
+    position: relative
+}
+
+.timeline .timeline-item::before {
+    background: #65411D;
+    content: "";
+    height: 100%;
+    left: 11px;
+    position: absolute;
+    top: 1.2rem;
+    width: 2px
+}
+
+.timeline .timeline-item .timeline-left {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto
+}
+
+.timeline .timeline-item .timeline-content {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 2px 0 2px .8rem
+}
+
+.timeline .timeline-item .timeline-icon {
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    height: 1.2rem;
+    justify-content: center;
+    text-align: center;
+    width: 1.2rem
+}
+
+.timeline .timeline-item .timeline-icon::before {
+    border: .1rem solid #F3A83C;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: .4rem;
+    left: .4rem;
+    position: absolute;
+    top: .4rem;
+    width: .4rem
+}
+
+.timeline .timeline-item .timeline-icon.icon-lg {
+    background: #F3A83C;
+    line-height: 1.2rem
+}
+
+.timeline .timeline-item .timeline-icon.icon-lg::before {
+    content: none
+}
+
+@media only screen and (max-width: 768px) {
+    .brand h1 {
+        font-size: 80px;
+    }
+
+    .header h2 {
+        font-size: 20px;
+    }
 }

@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "boulangerie-d-ici"
+    "default": "boulangerie-d-ici",
+    "staging": "boulangerie-d-ici-staging"
   }
 }
