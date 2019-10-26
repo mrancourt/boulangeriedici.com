@@ -113,9 +113,13 @@ function App() {
                   <p className="address">630D Boulevard Renault D</p>
                 </div>
 
+                <p className="location">
+                  Lac-Etchemin
+                </p>
+
                 <div className="point-of-sale">
                   <p className="title">Metro Lac Etchemin</p>
-                  <p className="address">1575 QC-277, Lac-Etchemin</p>
+                  <p className="address">1575 Route 277</p>
                 </div>
 
                 <p className="location">
