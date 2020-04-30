@@ -26,33 +26,33 @@ h1 {
     margin-bottom: 0;
 }
 
-h2 {
+h3 {
     margin-bottom: 0;
 }
 
-h2 a {
+h3 a {
     color: #fff;
     text-decoration: none!important;
     position: relative;
 }
 
-h2 a:hover {
+h3 a:hover {
     opacity: .8;
 }
 
-h2 a:before {
+h3 a:before {
     content: "";
     position: absolute;
     width: 100%;
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #F3A83C;
+    background-color: #CD7027;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.2s ease-in-out 0s;
 }
-h2 a:hover:before  {
+h3 a:hover:before  {
     visibility: visible;
     transform: scaleX(1);
 }
@@ -75,9 +75,9 @@ body {
 
 .header {
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.9);
     font-family: "Raleway-Regular", sans-serif;
-    height: 80px;
+    height: 60px;
     position: absolute;
     top: 0px;
     left: 0;
@@ -87,6 +87,10 @@ body {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
+}
+
+.header a {
+    color: #07477D;
 }
 
 .brand {
@@ -99,6 +103,13 @@ body {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+}
+
+.brand img {
+    width: 60%;
+    padding: 70px;
+    background-color: rgba(255, 255, 255, .9);
+    border: 5px solid #CD7027;
 }
 
 .brand h1 {
@@ -250,6 +261,11 @@ footer .column {
 }
 
 @media only screen and (max-width: 768px) {
+
+    .brand img {
+        width: 90%;
+    }
+
     .brand h1 {
         font-size: 80px;
     }
