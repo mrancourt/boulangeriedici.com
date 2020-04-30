@@ -12,8 +12,8 @@ function App() {
           className="principal"
           layers={[
             {
-              image: './images/pain4.jpg',
-              amount: -.9,
+              image: './images/pain9.jpg',
+              amount: .2,
             }
           ]}
           style={{
@@ -21,22 +21,15 @@ function App() {
           }}
         >
           <div className="header">
-            <h2>
-              <a className="text-gray text" href="#points_de_vente">Points de vente</a>
-            </h2>
-            <h2>
-              <a className="text-gray text" href="#contact">Contact</a>
-            </h2>
+            <h3>
+              <a className="text" href="#points_de_vente">Points de vente</a>
+            </h3>
+            <h3>
+              <a className="text" href="#contact">Contact</a>
+            </h3>
           </div>
           <div className="brand animated fadeIn">
-            <h1>
-              <span className="logo_1">
-                Boulangerie
-              </span>
-              <span className="logo_2">
-                d'ici
-              </span>
-            </h1>
+            <img src="/images/logo.png" alt="Boulangerie d'ici"/>
           </div>
         </ParallaxBanner>
 
@@ -190,16 +183,7 @@ function App() {
                   <table>
                     <tbody>
                     <tr>
-                      <td width={120}>Mardi</td>
-                      <td>5AM–11AM</td>
-                    </tr>
-                    <tr>
-                      <td>Jeudi</td>
-                      <td>5AM–11AM</td>
-                    </tr>
-                    <tr>
-                      <td>Vendredi</td>
-                      <td>5AM–11AM</td>
+                      <td>Ouvert selon l'humeur du boulanger</td>
                     </tr>
                     </tbody>
                   </table>
@@ -214,7 +198,7 @@ function App() {
                   Saint-Côme-Linière, QC G0M 1J0
                   <br/>
                   <FontAwesomeIcon icon={faPhone} />{' '}
-                  <a href="tel:833-685-7246">833-685-7246</a>
+                  <a href="tel:1-833-685-7246">1-833-685-7246</a>
                 </div>
               </div>
             </div>
