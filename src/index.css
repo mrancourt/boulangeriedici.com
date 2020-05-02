@@ -261,9 +261,9 @@ footer .column {
 }
 
 @media only screen and (max-width: 768px) {
-
     .brand img {
         width: 90%;
+        padding: 30px;
     }
 
     .brand h1 {
