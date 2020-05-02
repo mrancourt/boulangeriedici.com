@@ -3,18 +3,8 @@
     src: local('Raleway-Regular'), url(./fonts/Raleway-Regular.ttf) format('woff');
 }
 
-@font-face {
-    font-family: 'Aerolitecpone';
-    src: local('Aerolitecpone'), url(./fonts/aerolitecpone.otf) format('woff');
-}
-
-@font-face {
-    font-family: 'Sardonyx';
-    src: local('Sardonyx'), url(./fonts/Sardonyx.otf) format('woff');
-}
-
 body {
-    font-family: "Raleway-Regular";
+    font-family: "Raleway-Regular", sans-serif;
 }
 
 a {
@@ -75,9 +65,9 @@ body {
 
 .header {
     color: #fff;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(250, 247, 241, 0.9);
     font-family: "Raleway-Regular", sans-serif;
-    height: 60px;
+    height: 80px;
     position: absolute;
     top: 0px;
     left: 0;
@@ -105,28 +95,22 @@ body {
     justify-content: center;
 }
 
+.header img {
+    width: 150px;
+}
+
+.logo-wrapper {
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(8, 41, 75, 0.82);
+    border: 1.5px solid #CD7027;
+    width: 40%;
+}
+
 .brand img {
-    width: 60%;
-    padding: 70px;
-    background-color: rgba(255, 255, 255, .9);
-    border: 5px solid #CD7027;
-}
-
-.brand h1 {
-    font-size:10vw;
-}
-
-.brand h1 .logo_1 {
-    color: #65411D;
-    text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
-    font-family: "Sardonyx", sans-serif;
-    margin-right: 15px;
-}
-
-.brand h1 .logo_2 {
-    color: #F3A83C;
-    text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
-    font-family: "Aerolitecpone", sans-serif;
+    filter: brightness(0) invert(1);
+    width: 95%;
+    padding: 60px;
 }
 
 section {
@@ -140,7 +124,7 @@ section .container {
 
 section.light {
     color: #000;
-    background-color: rgb(234, 223, 220);
+    background-color: #faf7f1;
 }
 
 section.dark {
@@ -170,7 +154,7 @@ section.dark {
 }
 
 footer {
-    color: #fff;
+    color: #faf7f1;
     background-color: #1d191a;
     min-height: 260px;
     padding-top: -60px;
@@ -260,10 +244,30 @@ footer .column {
     content: none
 }
 
+.mobile {
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .header h3 {
+        font-size: 20px;
+    }
+
+    .logo-wrapper {
+        width: 90%;
+    }
+
     .brand img {
         width: 90%;
-        padding: 30px;
+        padding: 40px;
     }
 
     .brand h1 {
@@ -274,3 +278,4 @@ footer .column {
         font-size: 20px;
     }
 }
+

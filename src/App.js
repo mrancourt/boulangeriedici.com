@@ -11,24 +11,50 @@ function App() {
           className="principal"
           layers={[
             {
-              image: './images/pain9.jpg',
-              amount: .2,
+              image: './images/etienne-baguettes.jpg',
+              amount: -.15,
             }
           ]}
           style={{
             height: '100vh',
           }}
         >
-          <div className="header">
+          <div className="header desktop">
             <h3>
               <a className="text" href="#points_de_vente">Points de vente</a>
+            </h3>
+            <h3 className="logo-header">
+              <a href="/">
+                <img src="/images/logo.png" alt="Boulangerie d'ici"/>
+              </a>
             </h3>
             <h3>
               <a className="text" href="#contact">Contact</a>
             </h3>
           </div>
+
+          <div className="header mobile">
+            <div>
+              <h3 className="logo-header">
+                <a href="/">
+                  <img src="/images/logo.png" alt="Boulangerie d'ici"/>
+                </a>
+              </h3>
+            </div>
+            <div>
+              <h3>
+                <a className="text" href="#points_de_vente">Points de vente</a>
+              </h3>
+              <h3>
+                <a className="text" href="#contact">Contact</a>
+              </h3>
+            </div>
+          </div>
+
           <div className="brand animated fadeIn">
-            <img src="/images/logo.png" alt="Boulangerie d'ici"/>
+            <div className="logo-wrapper">
+              <img src="/images/logo.png" alt="Boulangerie d'ici"/>
+            </div>
           </div>
         </ParallaxBanner>
 
@@ -172,15 +198,15 @@ function App() {
         </section>
 
         {/*<ParallaxBanner*/}
-          {/*layers={[*/}
-            {/*{*/}
-              {/*image: './images/pain6.jpg',*/}
-              {/*amount: .5,*/}
-            {/*}*/}
-          {/*]}*/}
-          {/*style={{*/}
-            {/*height: '300px',*/}
-          {/*}}*/}
+        {/*layers={[*/}
+        {/*{*/}
+        {/*image: './images/pain6.jpg',*/}
+        {/*amount: .5,*/}
+        {/*}*/}
+        {/*]}*/}
+        {/*style={{*/}
+        {/*height: '300px',*/}
+        {/*}}*/}
         {/*/>*/}
 
         <section id="points_de_vente" className="light">
@@ -221,7 +247,7 @@ function App() {
         <ParallaxBanner
           layers={[
             {
-              image: './images/pain3.jpg',
+              image: './images/pain.jpg',
               amount: .5,
             }
           ]}
