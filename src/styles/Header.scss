@@ -1,0 +1,40 @@
+.Header {
+  //border: 2px solid red;
+  position: relative;
+  z-index: 1;
+
+  padding: 60px 60px 0 60px;
+  background-color: #d8d9de;
+
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+  li a {
+    padding: 16px;
+  }
+
+  .menu-logo {
+    width: 205px;
+
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu-link .active {
+    font-weight: bold;
+    color: #07477d;
+  }
+}
