@@ -11,4 +11,26 @@ body {
     color: #07477d;
   }
 
+  .link {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(7, 71, 125);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.873;
+
+    &.dark {
+      color: black;
+
+      &:hover, &.active {
+        color: #07477d;
+      }
+    }
+
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
 }

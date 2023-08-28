@@ -1,0 +1,22 @@
+.ShopHeader {
+  // TODO: fix header
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 550px;
+  background-image: url("/images/baguette-full.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  h1 {
+    color: #fff;
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 50px;
+  }
+
+}

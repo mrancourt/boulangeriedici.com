@@ -3,7 +3,9 @@ import './styles/Header.scss'
 function Header() {
   return (
     <div className="Header">
-      <img className="menu-logo " src="/images/logo.png" alt="Boulangerie d'ici" />
+      <a href='/'>
+        <img className="menu-logo " src="/images/logo.png" alt="Boulangerie d'ici" />
+      </a>
       <ul className="menu">
         <li className="menu-link active">
           <a href='/' className="active">Maison</a>

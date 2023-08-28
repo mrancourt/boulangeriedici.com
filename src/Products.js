@@ -1,10 +1,9 @@
-import './styles/Favorites.scss'
+import './styles/Products.scss'
 import React from 'react';
 
-function Favorites() {
+function Products() {
   return (
-    <div className="Favorites">
-      <h1>Favoris de la famille</h1>
+    <div className="Products">
       <div className="grid-container">
         <div className="grid-item">
           <img src='./images/vignette-1.png' alt='' />
@@ -43,15 +42,8 @@ function Favorites() {
           </div>
         </div>
       </div>
-
-      <p className="link-block text-center">
-        <a className="link" href='/nos-produits'>Visitez La Boutique{' '}
-          <img src='/images/right-arrow.png' height={12} alt='Right arrow' />
-        </a>
-      </p>
-
     </div>
   );
 }
 
-export default Favorites;
+export default Products;

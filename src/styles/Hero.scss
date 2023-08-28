@@ -1,4 +1,7 @@
 .Hero {
+  // TODO: fix
+  height: 550px; // Complete hack - delete me, fix positioning
+
   position: relative;
   //border: 2px solid blue;
 
@@ -27,7 +30,7 @@
   .hero-text {
     position: absolute;
     width: 100%;
-    bottom: -100px;
+    //bottom: -100px; // nedded with the 550 px height.. TODO: fix
     z-index: 1;
 
     font-size: 43px;

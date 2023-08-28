@@ -1,0 +1,14 @@
+.Footer {
+  height: 300px;
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px;
+  }
+
+  .footer-section {
+    flex-grow: 1;
+    width: 33%;
+  }
+}

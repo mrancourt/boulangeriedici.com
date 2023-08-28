@@ -4,7 +4,7 @@ import Contact from "./Contact"
 import Header from './Header';
 import Footer from './Footer';
 import Copyright from './Copyright';
-import Shop from './Shop/Shop';
+import Shop from './Shop';
 import History from './History';
 
 function App() {

@@ -1,7 +1,9 @@
+import './styles/Copyright.scss'
+
 function Copyright() {
   return (
-    <div>
-      <h1>Copyright</h1>
+    <div className="Copyright">
+      © Boulangerie D'ici {new Date().getFullYear()}. Tous droits réservés.
     </div>
   );
 }
