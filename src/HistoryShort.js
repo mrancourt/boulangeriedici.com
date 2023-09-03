@@ -23,9 +23,9 @@ function HistoryShort() {
         />
 
         {/*<div className="summary-collage">*/}
-        {/*  <img className="summary-image-1" src='/images/history-image1.png' alt='Image 1' />*/}
+        {/*  <img className="summary-image-1" src='/images/history-image3.png' alt='Image 1' />*/}
         {/*  <img className="summary-image-2" src='/images/history-image2.png' alt='Image 2' />*/}
-        {/*  <img className="summary-image-3" src='/images/history-image3.png' alt='Image 3' />*/}
+        {/*  <img className="summary-image-3" src='/images/history-image1.png' alt='Image 3' />*/}
         {/*</div>*/}
         <div className="summary-text">
           Géré par une famille de boulangers se concentrant
