@@ -1,8 +1,8 @@
-import './styles/Header.scss'
+import './styles/HeaderBak.scss'
 
-function Header() {
+function HeaderBak() {
   return (
-    <div className="Header">
+    <div className="HeaderBak">
       <a href='/'>
         <img className="menu-logo " src="/images/logo.png" alt="Boulangerie d'ici" />
       </a>
@@ -24,4 +24,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HeaderBak;

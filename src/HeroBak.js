@@ -1,9 +1,9 @@
-import './styles/Hero.scss'
+import './styles/HeroBak.scss'
 
-function Hero() {
+function HeroBak() {
   return (
-    <div className="Hero">
-      <img className="hero-image" src="/images/hero.png" alt="Hero" />
+    <div className="HeroBak">
+      <img className="hero-image" src="/images/hero.png" alt="HeroBak" />
       <div className="marquee">
         <span className="marquee__content">
           <h1>Boulangerie d'ici </h1>
@@ -20,4 +20,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default HeroBak;

@@ -1,11 +1,11 @@
-import Hero from './Hero';
+import HeroBak from './HeroBak';
 import HistoryShort from './HistoryShort';
 import Favorites from './Favorites';
 
 function Home() {
   return (
     <div>
-      <Hero />
+      <HeroBak />
       <HistoryShort />
       <Favorites />
     </div>

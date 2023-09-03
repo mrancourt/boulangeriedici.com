@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./Home"
 import Contact from "./Contact"
-import Header from './Header';
+import HeaderBak from './HeaderBak';
 import Footer from './Footer';
 import Copyright from './Copyright';
 import Shop from './Shop';
@@ -10,7 +10,7 @@ import History from './History';
 function App() {
   return (
     <>
-      <Header />
+      <HeaderBak />
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
