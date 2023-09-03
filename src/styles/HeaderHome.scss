@@ -1,0 +1,110 @@
+// TODO: Fix scrolling z-index
+
+.HeaderHome {
+  background-color: #d8d9de;
+
+  section {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    // TODO: fix space between runs
+    .marquee-container {
+      position: fixed;
+      color: #fff;
+      font-size: 10em;
+      z-index: 0;
+
+      --gap: 1rem;
+      display: flex;
+      overflow: hidden;
+      user-select: none;
+      gap: var(--gap);
+    }
+
+    .marquee-content {
+      flex-shrink: 0;
+      display: flex;
+      justify-content: space-around;
+      min-width: 100%;
+      gap: var(--gap);
+
+      animation: scroll 45s linear infinite;
+    }
+
+    .text-container {
+      text-align: center;
+      position: relative;
+      bottom: 30px;
+      color: #fff;
+      font-size: 5em;
+      z-index: 3;
+    }
+
+    .background-home {
+      z-index: 2;
+    }
+  }
+
+  .menu {
+    z-index: 5;
+    position: relative;
+    top: 40px;
+
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      justify-content: end;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      padding: 10px;
+    }
+
+    li a {
+      padding: 16px;
+    }
+
+    .menu-logo {
+      width: 10rem;
+    }
+
+    .menu-link .active {
+      font-weight: bold;
+      color: #07477d;
+    }
+  }
+
+  .fading-element {
+    transition: opacity 0.3s ease-out;
+    opacity: 1;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+}

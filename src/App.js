@@ -10,7 +10,7 @@ import History from './History';
 function App() {
   return (
     <>
-      <HeaderBak />
+      {/*<HeaderBak />*/}
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -20,8 +20,8 @@ function App() {
         </Routes>
       </Router>
       {/*<Contact />*/}
-      <Footer />
-      <Copyright />
+      {/*<Footer />*/}
+      {/*<Copyright />*/}
     </>
   )
 }

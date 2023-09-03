@@ -1,4 +1,9 @@
 .HistoryShort {
+  // TODO: hack for marquee
+  z-index: 100;
+  position: relative;
+  // hack for marquee
+
   height: 800px;
 
   .summary-arrow {
