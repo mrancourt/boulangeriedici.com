@@ -1,6 +1,7 @@
 import React from 'react'
 
 import './styles/HistoryShort.scss'
+import Collage from './Collage';
 
 function HistoryShort() {
   return (
@@ -12,6 +13,15 @@ function HistoryShort() {
         <div className="side-text">
           Depuis 26 ans
         </div>
+
+        {/*<Collage*/}
+        {/*images={[*/}
+        {/*  "/images/history-image1.png",*/}
+        {/*  "/images/history-image2.png",*/}
+        {/*  "/images/history-image3.png",*/}
+        {/*]}*/}
+        {/*/>*/}
+
         <div className="summary-collage">
           <img className="summary-image-1" src='/images/history-image1.png' alt='Image 1' />
           <img className="summary-image-2" src='/images/history-image2.png' alt='Image 2' />

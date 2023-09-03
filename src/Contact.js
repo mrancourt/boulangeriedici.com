@@ -1,9 +1,12 @@
 import './styles/Contact.scss'
+import ContactInfo from './ContactInfo';
+import ContactForm from './ContactForm';
 
 function Contact() {
   return (
     <div className="Contact">
-      <h1 className="contact-text">Contact</h1>
+      <ContactInfo />
+      <ContactForm />
     </div>
   );
 }

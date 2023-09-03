@@ -1,0 +1,29 @@
+.summary-collage {
+  position: relative;
+  flex-grow: 1;
+
+  .collage-image-1 {
+    position: absolute;
+    left: 116px;
+    top: 364px;
+    width: 286px;
+    height: 236px;
+    z-index: 3;
+  }
+
+  .collage-image-2 {
+    position: absolute;
+    top: 46px;
+    width: 452px;
+    height: 372px;
+    z-index: 2;
+  }
+
+  .collage-image-3 {
+    position: absolute;
+    left: 262px;
+    width: 614px;
+    height: 506px;
+    z-index: 1;
+  }
+}

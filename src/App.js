@@ -19,7 +19,7 @@ function App() {
           <Route path="/contactez-nous" element={<Contact />} />
         </Routes>
       </Router>
-      <Contact />
+      {/*<Contact />*/}
       <Footer />
       <Copyright />
     </>
