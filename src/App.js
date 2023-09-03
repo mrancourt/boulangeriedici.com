@@ -6,6 +6,7 @@ import Footer from './Footer';
 import Copyright from './Copyright';
 import Shop from './Shop';
 import History from './History';
+import ContactSection from './ContactSection';
 
 function App() {
   return (
@@ -19,9 +20,9 @@ function App() {
           <Route path="/contactez-nous" element={<Contact />} />
         </Routes>
       </Router>
-      {/*<Contact />*/}
-      {/*<Footer />*/}
-      {/*<Copyright />*/}
+      <ContactSection />
+      <Footer />
+      <Copyright />
     </>
   )
 }
