@@ -60,45 +60,6 @@
     }
   }
 
-  .menu {
-    z-index: 5;
-    position: relative;
-    top: 40px;
-
-    display: flex;
-    justify-content: space-between;
-
-    ul {
-      display: flex;
-      justify-content: end;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    li {
-      padding: 10px;
-    }
-
-    li a {
-      padding: 16px;
-    }
-
-    .menu-logo {
-      width: 10rem;
-    }
-
-    .menu-link .active {
-      font-weight: bold;
-      color: #07477d;
-    }
-  }
-
-  .fading-element {
-    transition: opacity 0.3s ease-out;
-    opacity: 1;
-  }
-
   @keyframes scroll {
     from {
       transform: translateX(0);

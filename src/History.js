@@ -1,21 +1,25 @@
 import React from 'react'
 import './styles/History.scss'
+import Collage from './Collage';
+import HeaderHistory from './HeaderHistory';
 
 function History() {
   return (
     <div className="History">
 
-      <img src='./images/history-background.png' alt='' style={{width: '100%'}} />
+      <HeaderHistory />
       
       <div className="summary-section">
-        <div className="side-text">
+        <div className="side-text"> </div>
 
-        </div>
-        <div className="summary-collage">
-          <img className="summary-image-1" src='/images/history-image1.png' alt='Image 1' />
-          <img className="summary-image-2" src='/images/history-image2.png' alt='Image 2' />
-          <img className="summary-image-3" src='/images/history-image3.png' alt='Image 3' />
-        </div>
+        <Collage
+          images={[
+            "/images/history-image1.png",
+            "/images/history-image2.png",
+            "/images/history-image3.png",
+          ]}
+        />
+
         <div className="summary-text">
           La Boulangerie d’ici,
           fondée en 1997 par

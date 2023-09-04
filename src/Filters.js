@@ -1,14 +1,16 @@
 import './styles/Filters.scss'
 import React from 'react';
 
-function Filters() {
+function Filters({filters, selectedFilter}) {
   return (
     <div className="Filters">
-      <a className="link dark active" href='/notre-histoire'>Tous</a>
-      <a className="link dark" href='/notre-histoire'>Pains au levain</a>
-      <a className="link dark" href='/notre-histoire'>Pains à la levure</a>
-      <a className="link dark" href='/notre-histoire'>Baguettes</a>
-      <a className="link dark" href='/notre-histoire'>Petits Pains</a>
+      {Object.keys(filters).map((filter, i) => {
+        let selected = false;
+        if (!selectedFilter && i === 0 || selectedFilter === filter ) {
+          selected = true;
+        }
+        return <a className={`link dark ${selected ? "active" : ''}`} href={`/nos-produits/filters/${filter}`}>{filters[filter]}</a>
+      })}
     </div>
   );
 }

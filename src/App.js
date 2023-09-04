@@ -11,11 +11,13 @@ import ContactSection from './ContactSection';
 function App() {
   return (
     <>
-      {/*<HeaderBak />*/}
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/nos-produits" element={<Shop />} />
+          <Route path="/nos-produits" element={<Shop />} >
+            <Route path="/nos-produits/filters/:filter" element={<Shop />} />
+            <Route path="/nos-produits/:product/:name" element={<Shop />} />
+          </Route>
           <Route path="/notre-histoire" element={<History />} />
           <Route path="/contactez-nous" element={<Contact />} />
         </Routes>
