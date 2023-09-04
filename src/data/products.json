@@ -1,0 +1,148 @@
+[
+  {
+    "id": 1,
+    "name": "Pain blanc Traditionnel",
+    "description": "Un pain léger et tendre, parfait pour les sandwichs et les toasts. Fabriqué à partir de farine blanche de qualité supérieure.",
+    "image": "vignette-1.png",
+    "images": [
+      "vignette-1.png",
+      "vignette-2.png",
+      "vignette-3.png"
+    ],
+    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "ingredients": "Eau, farine de blé entier, farine blanche non blanchie, sel, levure.",
+    "additionnalInfo": [
+      "Aucun gras ni sucre ajouté",
+      "Peut contenir des traces de noix ou de sésame."
+    ],
+    "categorie": "pains-a-la-levure"
+  },
+  {
+    "id": 2,
+    "name": "Pain blé Traditionnel",
+    "description": "Ce pain offre une croûte croustillante et une mie délicate. Il est idéal pour accompagner les soupes et les ragoûts.",
+    "image": "vignette-2.png",
+    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "categorie": "pains-a-la-levure"
+  },
+  {
+    "id": 3,
+    "name": "Pain rainsins canneberges",
+    "description": "Un pain sucré savoureux garni de raisins secs et de canneberges, idéal pour le petit-déjeuner et les en-cas d'après-midi.",
+    "image": "vignette-3.png",
+    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "categorie": "pains-au-levain"
+  },
+  {
+    "id": 4,
+    "name": "Pain 7 grains",
+    "description": "Un mélange nutritif de sept grains différents. Un choix judicieux pour un régime équilibré.",
+    "image": "vignette-4.png",
+    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "categorie": "pains-au-levain"
+  },
+  {
+    "id": 5,
+    "name": "Pain aux raisins",
+    "description": "Ce pain moelleux est rempli de raisins juteux. Idéal pour le petit-déjeuner ou pour une petite gâterie sucrée.",
+    "image": "vignette-1.png",
+    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "categorie": "pains-au-levain"
+  },
+  {
+    "id": 6,
+    "name": "Pain blé tamisé",
+    "description": "Un pain rustique conçu à partir de farine de blé tamisée. C'est le choix parfait pour les sandwichs et les toasts.",
+    "image": "vignette-1.png",
+    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "categorie": "pains-au-levain"
+  },
+  {
+    "id": 7,
+    "name": "Pain de Kamut",
+    "description": "Un pain sain et savoureux à base de Kamut, une variété de blé ancienne. Une option délicieuse et saine.",
+    "image": "vignette-1.png",
+    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "categorie": "pains-au-levain"
+  },
+  {
+    "id": 8,
+    "name": "Pain d'épeautre",
+    "description": "Un pain riche et savoureux à base de farine d'épeautre. Un choix idéal pour ceux qui cherchent une alternative au blé.",
+    "image": "vignette-1.png",
+    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "categorie": "pains-au-levain"
+  },
+  {
+    "id": 9,
+    "name": "Pain de sarrasin vert",
+    "description": "Un pain unique conçu à partir de sarrasin vert. Sans gluten et délicieusement riche en saveurs.",
+    "image": "vignette-1.png",
+    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "categorie": "pains-au-levain"
+  },
+  {
+    "id": 10,
+    "name": "Matinal",
+    "description": "Un pain léger, idéal pour commencer votre journée. Parfait pour le petit-déjeuner ou pour accompagner votre café.",
+    "image": "vignette-1.png",
+    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "categorie": "pains-au-levain"
+  },
+  {
+    "id": 11,
+    "name": "Miche blanche",
+    "description": "Un grand pain avec une mie tendre et une croûte dorée. Parfait pour les grandes familles.",
+    "image": "vignette-2.png",
+    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "categorie": "pains-au-levain"
+  },
+  {
+    "id": 12,
+    "name": "Miche noix de Grenoble",
+    "description": "Une miche délicieuse garnie de noix de Grenoble croquantes. Le complément idéal à un plateau de fromages.",
+    "image": "vignette-2.png",
+    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "categorie": "pains-au-levain"
+  },
+  {
+    "id": 13,
+    "name": "Baguette noix de Grenoble",
+    "description": "Une baguette traditionnelle agrémentée de noix de Grenoble pour une touche de croquant et de saveur.",
+    "image": "vignette-1.png",
+    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "categorie": "baguettes"
+  },
+  {
+    "id": 14,
+    "name": "Baguette blanche",
+    "description": "La baguette traditionnelle, avec une croûte croustillante et une mie tendre. L'accompagnement idéal pour tous vos repas.",
+    "image": "vignette-3.png",
+    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "categorie": "baguettes"
+  },
+  {
+    "id": 15,
+    "name": "Pain à soupe",
+    "description": "Un pain creux parfait pour servir votre soupe préférée. Ajoute une touche créative à vos repas.",
+    "image": "vignette-1.png",
+    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "categorie": "petits-pains"
+  },
+  {
+    "id": 16,
+    "name": "Pain Hamburger",
+    "description": "Des pains à hamburger savoureux, idéals pour accompagner vos burgers faits maison.",
+    "image": "vignette-1.png",
+    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "categorie": "petits-pains"
+  },
+  {
+    "id": 17,
+    "name": "Pain sous-marin",
+    "description": "Pain sous-marin long et moelleux, idéal pour les sandwichs. Transformez votre repas en une expérience délicieuse.",
+    "image": "vignette-1.png",
+    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "categorie": "petits-pains"
+  }
+]

@@ -1,5 +1,6 @@
 import './styles/Filters.scss'
 import React from 'react';
+import { Link } from "react-router-dom";
 
 function Filters({filters, selectedFilter}) {
   return (
@@ -9,7 +10,11 @@ function Filters({filters, selectedFilter}) {
         if (!selectedFilter && i === 0 || selectedFilter === filter ) {
           selected = true;
         }
-        return <a className={`link dark ${selected ? "active" : ''}`} href={`/nos-produits/filters/${filter}`}>{filters[filter]}</a>
+        return (
+          <Link className={`link dark ${selected ? "active" : ''}`} to={`/nos-produits/categorie/${filter}`} state={{ from: 'origin' }} >
+            {filters[filter]}
+          </Link>
+          )
       })}
     </div>
   );

@@ -3,7 +3,10 @@ import './styles/ShopHeader.scss'
 function ShopHeader() {
   return (
     <div className="ShopHeader">
-      <h1>Boutique</h1>
+      <section>
+        <img src='images/baguette-full.png' alt='Background Image' />
+        <h1>Boutique</h1>
+      </section>
     </div>
   );
 }
