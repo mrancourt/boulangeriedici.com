@@ -1,8 +1,7 @@
-import './styles/Products.scss'
 import React from 'react';
 import { Link } from "react-router-dom";
-
 import { slugify } from './helpers';
+import './styles/Products.scss'
 
 function Products({products}) {
   return (

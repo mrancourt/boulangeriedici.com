@@ -1,12 +1,12 @@
-import './styles/Shop.scss'
-import ShopHeader from './ShopHeader';
-import Filters from './Filters';
 import React from 'react';
-import Products from './Products';
 import Menu from './Menu';
+import ShopHeader from './ShopHeader';
+import Products from './Products';
+import Filters from './Filters';
 import { useParams } from 'react-router-dom';
-import allProducts from './data/products.json';
 import { groupBy } from './helpers';
+import allProducts from './data/products.json';
+import './styles/Shop.scss'
 
 const filters = {
   "tous": "Tous",

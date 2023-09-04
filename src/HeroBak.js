@@ -1,3 +1,4 @@
+import React from 'react';
 import './styles/HeroBak.scss'
 
 function HeroBak() {

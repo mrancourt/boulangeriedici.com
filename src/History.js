@@ -1,7 +1,7 @@
 import React from 'react'
-import './styles/History.scss'
 import Collage from './Collage';
 import HeaderHistory from './HeaderHistory';
+import './styles/History.scss'
 
 function History() {
   return (

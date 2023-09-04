@@ -1,7 +1,6 @@
 import React from 'react'
-
-import './styles/HistoryShort.scss'
 import Collage from './Collage';
+import './styles/HistoryShort.scss'
 
 function HistoryShort() {
   return (

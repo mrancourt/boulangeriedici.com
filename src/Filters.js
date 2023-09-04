@@ -1,6 +1,6 @@
-import './styles/Filters.scss'
 import React from 'react';
 import { Link } from "react-router-dom";
+import './styles/Filters.scss'
 
 function Filters({filters, selectedFilter}) {
   return (

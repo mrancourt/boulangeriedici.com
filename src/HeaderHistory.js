@@ -1,7 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
-
-import './styles/HeaderHistory.scss'
+import React, { useEffect, useRef } from "react";
 import Menu from './Menu';
+import './styles/HeaderHistory.scss'
 
 function HeaderHistory() {
   const backgroundRef = useRef(null);

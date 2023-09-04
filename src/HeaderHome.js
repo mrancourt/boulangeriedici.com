@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
-
-import './styles/HeaderHome.scss'
 import Menu from './Menu';
+import './styles/HeaderHome.scss'
 
 function HeaderHome() {
   const backgroundRef = useRef(null);

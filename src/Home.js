@@ -1,4 +1,3 @@
-import HeroBak from './HeroBak';
 import HistoryShort from './HistoryShort';
 import Favorites from './Favorites';
 import HeaderHome from './HeaderHome';

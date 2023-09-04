@@ -1,3 +1,4 @@
+import React from 'react';
 import './styles/ContactSection.scss'
 
 function Contact() {

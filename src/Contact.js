@@ -1,8 +1,8 @@
-import './styles/Contact.scss'
+import React from 'react';
 import ContactInfo from './ContactInfo';
 import ContactForm from './ContactForm';
 import Menu from './Menu';
-import React from 'react';
+import './styles/Contact.scss'
 
 function Contact() {
   return (

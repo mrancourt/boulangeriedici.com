@@ -1,5 +1,5 @@
-import './styles/Favorites.scss'
 import React from 'react';
+import './styles/Favorites.scss'
 
 function Favorites() {
   return (

@@ -1,11 +1,11 @@
-import './styles/Product.scss'
 import React from 'react';
-import Menu from './Menu';
-import { findBy } from './helpers';
-import products from './data/products.json';
-import { useParams } from 'react-router-dom';
 import Carousel from './Carousel';
+import Menu from './Menu';
 import InfiniteCarousel from './InfiniteCarousel';
+import { findBy } from './helpers';
+import { useParams } from 'react-router-dom';
+import products from './data/products.json';
+import './styles/Product.scss'
 
 const ProductNotFound = () => (
   <div>
