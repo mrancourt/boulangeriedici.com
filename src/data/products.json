@@ -8,7 +8,7 @@
       "/images/products/blanc-traditionnel.jpg",
       "/images/products/blanc-traditionnel-tranche.jpg"
     ],
-    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "nutritionFacts": "/images/nutrition-facts/pain-blanc-traditionnel.svg",
     "ingredients": "Eau, farine de blé entier, farine blanche non blanchie, sel, levure.",
     "additionnalInfo": [
       "Aucun gras ni sucre ajouté",
@@ -26,7 +26,7 @@
       "/images/products/brun-traditionnel.jpg",
       "/images/products/brun-traditionnel-tranche.jpg"
     ],
-    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "nutritionFacts": "/images/nutrition-facts/pain-ble-traditionnel.svg",
     "categorie": "pains-a-la-levure",
     "favorite": true
   },
@@ -39,7 +39,7 @@
       "/images/products/raisins-cannegerge.jpg",
       "/images/products/raisins-canneberge-tranche.jpg"
     ],
-    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "nutritionFacts": "/images/nutrition-facts/raisin-canneberges.svg",
     "categorie": "pains-au-levain",
     "favorite": true
   },
@@ -53,7 +53,7 @@
       "/images/products/7-grains-tranche-2.jpg",
       "/images/products/7-grains-tranche.jpg"
     ],
-    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "nutritionFacts": "/images/nutrition-facts/pain-7-grains.svg",
     "categorie": "pains-au-levain",
     "favorite": true
   },
@@ -66,7 +66,7 @@
       "/images/products/raisins.jpg",
       "/images/products/raisins-tranche.jpg"
     ],
-    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "nutritionFacts": "/images/nutrition-facts/pain-aux-raisins.svg",
     "categorie": "pains-au-levain"
   },
   {
@@ -78,7 +78,7 @@
       "/images/products/ble-tamise.jpg",
       "/images/products/ble-tamise-tranche.jpg"
     ],
-    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "nutritionFacts": "/images/nutrition-facts/ble-tamisee.svg",
     "categorie": "pains-au-levain"
   },
   {
@@ -91,7 +91,7 @@
       "/images/products/kamut-tranche-2.jpg",
       "/images/products/kamut-tranche.jpg"
     ],
-    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "nutritionFacts": "/images/nutrition-facts/kamut.svg",
     "categorie": "pains-au-levain"
   },
   {
@@ -103,7 +103,7 @@
       "/images/products/epeautre.jpg",
       "/images/products/epeautre-tranche.jpg"
     ],
-    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "nutritionFacts": "/images/nutrition-facts/pain-d-epeautre.svg",
     "categorie": "pains-au-levain"
   },
   {
@@ -115,7 +115,7 @@
       "/images/products/sarrasin-vert.jpg",
       "/images/products/sarrasin-vert-tranche.jpg"
     ],
-    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "nutritionFacts": "/images/nutrition-facts/pain-de-sarrasin-vert.svg",
     "categorie": "pains-au-levain"
   },
   {
@@ -127,7 +127,7 @@
       "/images/products/matinal.jpg",
       "/images/products/matinal-tranche.jpg"
     ],
-    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "nutritionFacts": "/images/nutrition-facts/matinal.svg",
     "categorie": "pains-au-levain"
   },
   {
@@ -140,7 +140,7 @@
       "/images/products/miche-blanche-2.jpg",
       "/images/products/miche-blanche-tranchee.jpg"
     ],
-    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "nutritionFacts": "/images/nutrition-facts/miche-blanche.svg",
     "categorie": "pains-au-levain"
   },
   {
@@ -152,7 +152,7 @@
       "/images/products/miche-noix-de-grenoble.jpg",
       "/images/products/miche-noix-de-grenoble-tranchee.jpg"
     ],
-    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "nutritionFacts": "/images/nutrition-facts/miche-noix-de-grenoble.svg",
     "categorie": "pains-au-levain"
   },
   {
@@ -165,7 +165,7 @@
       "/images/products/baguette-noix-grenoble-tranche-2.jpg",
       "/images/products/baguette-noix-grnoble-tranche.jpg"
     ],
-    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "nutritionFacts": "/images/nutrition-facts/baguette-noix-grenoble.svg",
     "categorie": "baguettes",
     "favorite": true
   },
@@ -178,7 +178,7 @@
       "/images/products/baguette-blanche.jpg",
       "/images/products/baguette-blanche-tranche.jpg"
     ],
-    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "nutritionFacts": "/images/nutrition-facts/baguette-blanche.svg",
     "categorie": "baguettes",
     "favorite": true
   },
@@ -190,7 +190,7 @@
     "images": [
       "/images/products/petit-pain-à-soupe.jpg"
     ],
-    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "nutritionFacts": "/images/nutrition-facts/pain-a-soupe.svg",
     "categorie": "petits-pains"
   },
   {
@@ -202,7 +202,7 @@
       "/images/products/hamburger.jpg",
       "/images/products/hamburger-paquet-de-6.jpg"
     ],
-    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "nutritionFacts": "/images/nutrition-facts/hamburger.svg",
     "categorie": "petits-pains"
   },
   {
@@ -214,7 +214,7 @@
       "/images/products/sous-marin.jpg",
       "/images/products/sous-marin-paquet-de-6.jpg"
     ],
-    "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
+    "nutritionFacts": "/images/nutrition-facts/pain-a-soupe.svg",
     "categorie": "petits-pains"
   }
 ]

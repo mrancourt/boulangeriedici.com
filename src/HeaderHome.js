@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Menu from './Menu';
 import './styles/HeaderHome.scss'
 
@@ -10,10 +10,10 @@ function HeaderHome() {
     const handleScroll = () => {
       window.addEventListener('scroll', function () {
         let value = window.scrollY;
-        if (backgroundRef) {
+        if (backgroundRef.current) {
           backgroundRef.current.style.top = value * 0.5 + 'px';
         }
-        if (marqueeRef) {
+        if (marqueeRef.current) {
           marqueeRef.current.style.top = 0 + 'px';
         }
       })

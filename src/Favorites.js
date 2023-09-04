@@ -1,7 +1,8 @@
 import React from 'react';
-import { findWhere } from './helpers';
+import { findWhere, slugify } from './helpers';
 import products from './data/products.json'
 import './styles/Favorites.scss'
+import { Link } from 'react-router-dom';
 
 function Favorites() {
 
@@ -12,12 +13,14 @@ function Favorites() {
       <h1>Favoris de la famille</h1>
       <div className="grid-container">
         {favorites.map(favorite => (
-          <div key={favorite.id} className="grid-item">
-            <img src={favorite.image} alt={favorite.name} />
-            <div className="favorites-item-text">
-              {favorite.name}
+          <Link key={favorite.id} to={`/nos-produits/${favorite.id}/${slugify(favorite.name)}`}>
+            <div className="grid-item">
+              <img src={favorite.image} alt={favorite.name} />
+              <div className="favorites-item-text">
+                {favorite.name}
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 

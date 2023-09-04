@@ -4,7 +4,6 @@ import './styles/HeaderHistory.scss'
 
 function HeaderHistory() {
   const backgroundRef = useRef(null);
-  const backgroundMaskRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,7 +27,7 @@ function HeaderHistory() {
       <Menu activeTab="notre-histoire" height={0} />
 
       <section>
-        <img src="./images/history-background.png" className="background" ref={backgroundRef}/>
+        <img src="./images/history-background.png" alt="history background" className="background" ref={backgroundRef}/>
         <div className="text-container">
           <h1>Notre Histoire</h1>
         </div>

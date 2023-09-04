@@ -36,27 +36,32 @@ const Product = () => {
 
         <hr/>
 
-        <p>
-          <strong>Ingredients</strong><br/>
-          {product.ingredients}
-        </p>
+        <div className="product-info">
+          <div className="section">
+            <p>
+              <strong>Ingredients</strong><br/>
+              {product.ingredients}
+            </p>
 
-        <div>
-          <strong>Information additionnelle</strong><br/>
-          <ul>
-            {product.additionnalInfo?.map(info => (
-              <li>{info}</li>
-            ))}
-          </ul>
+            <div>
+              <strong>Information additionnelle</strong><br/>
+              <ul>
+                {product.additionnalInfo?.map((info, i) => (
+                  <li key={`${product.id}-${i}`}>{info}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="section text-center">
+            <img className="nutritions-facts" src={product.nutritionFacts} alt={`Valeurs nutritives - ${product.name}`} />
+          </div>
         </div>
 
         <hr/>
 
-        <a className="link" href='/nutrition-facts'>Valeurs Nutritives{' '}
-          <img src='/images/right-arrow.png' height={12} alt='Right arrow' />
-        </a>
-
-        <hr/>
+        {/*<a className="link" href='/nutrition-facts'>Valeurs Nutritives{' '}*/}
+        {/*  <img src='/images/right-arrow.png' height={12} alt='Right arrow' />*/}
+        {/*</a>*/}
 
         <h2 className="text-product-suggestions">Vous aimerez aussi</h2>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/ContactForm.scss'
 
+// TODO: hookup with firebase mailer?
 function ContactForm() {
   return (
     <div className="ContactForm">
@@ -10,7 +11,7 @@ function ContactForm() {
           <input type="text" placeholder="Nom..." />
             <input type="text" placeholder="Courriel..." />
         </div>
-        <textarea rows={8} className="textarea" placeholder="Commentaire..."/>
+        <textarea rows={8} className="textarea" placeholder="Question ou commentaire..."/>
         <p>
           <a className="link" href='/notre-histoire'>Envoyer{' '}
             <img src='/images/right-arrow.png' height={12} alt='Right arrow' />

@@ -12,10 +12,12 @@ const Collage = ({images}) => {
 
         const scrollY = window.scrollY;
         const images = collageRef.current.querySelectorAll('img');
-        
-        images[0].style.top = 250 -scrollY * .4 + 'px';
-        images[1].style.top = 350 -scrollY * .3 + 'px';
-        images[2].style.top = 500 -scrollY * .2 + 'px';
+
+        if (images.length > 0) {
+          images[0].style.top = 250 -scrollY * .4 + 'px';
+          images[1].style.top = 350 -scrollY * .3 + 'px';
+          images[2].style.top = 500 -scrollY * .2 + 'px';
+        }
       })
     }
 
