@@ -49,7 +49,7 @@ const Menu = ({activeTab, height}) => {
           </li>
 
           {Object.keys(tabs).map(tab => (
-            <li className={`menu-link ${activeTab === tab ? 'active' : ''}`}>
+            <li key={tab} className={`menu-link ${activeTab === tab ? 'active' : ''}`}>
               <a href={`/${tab}`}>{tabs[tab]}</a>
             </li>
           ))}
