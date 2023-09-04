@@ -7,7 +7,7 @@ import React from 'react';
 function Contact() {
   return (
     <div className="Contact">
-      <Menu activeTab="contact" height={0} />
+      <Menu activeTab="contact" height={120} />
       <ContactInfo />
       <ContactForm />
     </div>

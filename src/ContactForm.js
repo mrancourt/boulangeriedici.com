@@ -4,17 +4,20 @@ import React from 'react';
 function ContactForm() {
   return (
     <div className="ContactForm">
-      <input type='text' placeholder="Nom..." />
-      <input type='text' placeholder="Courriel..." />
-      <div>
-        <textarea placeholder="Message..."  cols={80} rows={16} />
+      <div className="container">
+      <form className="form-container">
+        <div className="input-wrapper">
+          <input type="text" placeholder="Nom..." />
+            <input type="text" placeholder="Courriel..." />
+        </div>
+        <textarea rows={8} className="textarea" placeholder="Commentaire..."/>
+        <p>
+          <a className="link" href='/notre-histoire'>Envoyer{' '}
+            <img src='/images/right-arrow.png' height={12} alt='Right arrow' />
+          </a>
+        </p>
+      </form>
       </div>
-      <div>
-        <a className="link" href='/notre-histoire'>Envoyer{' '}
-          <img src='/images/right-arrow.png' height={12} alt='Right arrow' />
-        </a>
-      </div>
-
     </div>
   );
 }

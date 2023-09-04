@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from "./Home"
 import Contact from "./Contact"
 import Footer from './Footer';
@@ -19,13 +19,12 @@ function App() {
           <Route path="/nos-produits" element={<Shop />}>
             <Route index element={<div />} />
             <Route path="categorie/:filter" element={<Shop />} />
-            {/*<Route path=":productId/:name" element={<Product />} />*/}
           </Route>
           <Route path="/notre-histoire" element={<History />} />
           <Route path="/contactez-nous" element={<Contact />} />
         </Routes>
-      </Router>
       <ContactSection />
+      </Router>
       <Footer />
       <Copyright />
     </>
