@@ -16,6 +16,8 @@
       will-change: transform;
 
       img {
+        max-height: 30vh;
+
         flex-shrink: 0;
         width: auto;
       }

@@ -23,7 +23,7 @@ function Carousel({ products }) {
       <div className="carousel-track" style={{ transform: `translateX(${offset})` }}>
         {products.map(product => (
           <div className="carousel-item" key={product.id}>
-            <img src={`/images/${product.image}`} alt={product.name} />
+            <img src={product.image} alt={product.name} />
             <div className="carousel-item-text">
               {product.name}
             </div>

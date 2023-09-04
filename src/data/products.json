@@ -3,11 +3,10 @@
     "id": 1,
     "name": "Pain blanc Traditionnel",
     "description": "Un pain léger et tendre, parfait pour les sandwichs et les toasts. Fabriqué à partir de farine blanche de qualité supérieure.",
-    "image": "vignette-1.png",
+    "image": "/images/products/blanc-traditionnel.jpg",
     "images": [
-      "vignette-1.png",
-      "vignette-2.png",
-      "vignette-3.png"
+      "/images/products/blanc-traditionnel.jpg",
+      "/images/products/blanc-traditionnel-tranche.jpg"
     ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
     "ingredients": "Eau, farine de blé entier, farine blanche non blanchie, sel, levure.",
@@ -21,7 +20,11 @@
     "id": 2,
     "name": "Pain blé Traditionnel",
     "description": "Ce pain offre une croûte croustillante et une mie délicate. Il est idéal pour accompagner les soupes et les ragoûts.",
-    "image": "vignette-2.png",
+    "image": "/images/products/brun-traditionnel.jpg",
+    "images": [
+      "/images/products/brun-traditionnel.jpg",
+      "/images/products/brun-traditionnel-tranche.jpg"
+    ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
     "categorie": "pains-a-la-levure"
   },
@@ -29,7 +32,11 @@
     "id": 3,
     "name": "Pain rainsins canneberges",
     "description": "Un pain sucré savoureux garni de raisins secs et de canneberges, idéal pour le petit-déjeuner et les en-cas d'après-midi.",
-    "image": "vignette-3.png",
+    "image": "/images/products/raisins-cannegerge.jpg",
+    "images": [
+      "/images/products/raisins-cannegerge.jpg",
+      "/images/products/raisins-canneberge-tranche.jpg"
+    ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
     "categorie": "pains-au-levain"
   },
@@ -37,7 +44,12 @@
     "id": 4,
     "name": "Pain 7 grains",
     "description": "Un mélange nutritif de sept grains différents. Un choix judicieux pour un régime équilibré.",
-    "image": "vignette-4.png",
+    "image": "/images/products/7-grains.jpg",
+    "images": [
+      "/images/products/7-grains.jpg",
+      "/images/products/7-grains-tranche-2.jpg",
+      "/images/products/7-grains-tranche.jpg"
+    ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
     "categorie": "pains-au-levain"
   },
@@ -45,7 +57,11 @@
     "id": 5,
     "name": "Pain aux raisins",
     "description": "Ce pain moelleux est rempli de raisins juteux. Idéal pour le petit-déjeuner ou pour une petite gâterie sucrée.",
-    "image": "vignette-1.png",
+    "image": "/images/products/raisins.jpg",
+    "images": [
+      "/images/products/raisins.jpg",
+      "/images/products/raisins-tranche.jpg"
+    ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
     "categorie": "pains-au-levain"
   },
@@ -53,7 +69,11 @@
     "id": 6,
     "name": "Pain blé tamisé",
     "description": "Un pain rustique conçu à partir de farine de blé tamisée. C'est le choix parfait pour les sandwichs et les toasts.",
-    "image": "vignette-1.png",
+    "image": "/images/products/ble-tamise.jpg",
+    "images": [
+      "/images/products/ble-tamise.jpg",
+      "/images/products/ble-tamise-tranche.jpg"
+    ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
     "categorie": "pains-au-levain"
   },
@@ -61,7 +81,12 @@
     "id": 7,
     "name": "Pain de Kamut",
     "description": "Un pain sain et savoureux à base de Kamut, une variété de blé ancienne. Une option délicieuse et saine.",
-    "image": "vignette-1.png",
+    "image": "/images/products/kamut.jpg",
+    "images": [
+      "/images/products/kamut.jpg",
+      "/images/products/kamut-tranche-2.jpg",
+      "/images/products/kamut-tranche.jpg"
+    ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
     "categorie": "pains-au-levain"
   },
@@ -69,7 +94,11 @@
     "id": 8,
     "name": "Pain d'épeautre",
     "description": "Un pain riche et savoureux à base de farine d'épeautre. Un choix idéal pour ceux qui cherchent une alternative au blé.",
-    "image": "vignette-1.png",
+    "image": "/images/products/epeautre.jpg",
+    "images": [
+      "/images/products/epeautre.jpg",
+      "/images/products/epeautre-tranche.jpg"
+    ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
     "categorie": "pains-au-levain"
   },
@@ -77,7 +106,11 @@
     "id": 9,
     "name": "Pain de sarrasin vert",
     "description": "Un pain unique conçu à partir de sarrasin vert. Sans gluten et délicieusement riche en saveurs.",
-    "image": "vignette-1.png",
+    "image": "/images/products/sarrasin-vert.jpg",
+    "images": [
+      "/images/products/sarrasin-vert.jpg",
+      "/images/products/sarrasin-vert-tranche.jpg"
+    ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
     "categorie": "pains-au-levain"
   },
@@ -85,7 +118,11 @@
     "id": 10,
     "name": "Matinal",
     "description": "Un pain léger, idéal pour commencer votre journée. Parfait pour le petit-déjeuner ou pour accompagner votre café.",
-    "image": "vignette-1.png",
+    "image": "/images/products/matinal.jpg",
+    "images": [
+      "/images/products/matinal.jpg",
+      "/images/products/matinal-tranche.jpg"
+    ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
     "categorie": "pains-au-levain"
   },
@@ -93,7 +130,12 @@
     "id": 11,
     "name": "Miche blanche",
     "description": "Un grand pain avec une mie tendre et une croûte dorée. Parfait pour les grandes familles.",
-    "image": "vignette-2.png",
+    "image": "/images/products/miche-blanche.jpg",
+    "images": [
+      "/images/products/miche-blanche.jpg",
+      "/images/products/miche-blanche-2.jpg",
+      "/images/products/miche-blanche-tranchee.jpg"
+    ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
     "categorie": "pains-au-levain"
   },
@@ -101,7 +143,11 @@
     "id": 12,
     "name": "Miche noix de Grenoble",
     "description": "Une miche délicieuse garnie de noix de Grenoble croquantes. Le complément idéal à un plateau de fromages.",
-    "image": "vignette-2.png",
+    "image": "/images/products/miche-noix-de-grenoble.jpg",
+    "images": [
+      "/images/products/miche-noix-de-grenoble.jpg",
+      "/images/products/miche-noix-de-grenoble-tranchee.jpg"
+    ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
     "categorie": "pains-au-levain"
   },
@@ -109,7 +155,12 @@
     "id": 13,
     "name": "Baguette noix de Grenoble",
     "description": "Une baguette traditionnelle agrémentée de noix de Grenoble pour une touche de croquant et de saveur.",
-    "image": "vignette-1.png",
+    "image": "/images/products/baguette-noix-de-grenoble.jpg",
+    "images": [
+      "/images/products/baguette-noix-de-grenoble.jpg",
+      "/images/products/baguette-noix-grenoble-tranche-2.jpg",
+      "/images/products/baguette-noix-grnoble-tranche.jpg"
+    ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
     "categorie": "baguettes"
   },
@@ -117,7 +168,11 @@
     "id": 14,
     "name": "Baguette blanche",
     "description": "La baguette traditionnelle, avec une croûte croustillante et une mie tendre. L'accompagnement idéal pour tous vos repas.",
-    "image": "vignette-3.png",
+    "image": "/images/products/baguette-blanche.jpg",
+    "images": [
+      "/images/products/baguette-blanche.jpg",
+      "/images/products/baguette-blanche-tranche.jpg"
+    ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
     "categorie": "baguettes"
   },
@@ -125,7 +180,10 @@
     "id": 15,
     "name": "Pain à soupe",
     "description": "Un pain creux parfait pour servir votre soupe préférée. Ajoute une touche créative à vos repas.",
-    "image": "vignette-1.png",
+    "image": "/images/products/petit-pain-à-soupe.jpg",
+    "images": [
+      "/images/products/petit-pain-à-soupe.jpg"
+    ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
     "categorie": "petits-pains"
   },
@@ -133,7 +191,11 @@
     "id": 16,
     "name": "Pain Hamburger",
     "description": "Des pains à hamburger savoureux, idéals pour accompagner vos burgers faits maison.",
-    "image": "vignette-1.png",
+    "image": "/images/products/hamburger.jpg",
+    "images": [
+      "/images/products/hamburger.jpg",
+      "/images/products/hamburger-paquet-de-6.jpg"
+    ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
     "categorie": "petits-pains"
   },
@@ -141,7 +203,11 @@
     "id": 17,
     "name": "Pain sous-marin",
     "description": "Pain sous-marin long et moelleux, idéal pour les sandwichs. Transformez votre repas en une expérience délicieuse.",
-    "image": "vignette-1.png",
+    "image": "/images/products/sous-marin.jpg",
+    "images": [
+      "/images/products/sous-marin.jpg",
+      "/images/products/sous-marin-paquet-de-6.jpg"
+    ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
     "categorie": "petits-pains"
   }

@@ -14,7 +14,7 @@ const InfiniteCarousel = ({ images = [] }) => {
       setOffset(prevOffset => (prevOffset + 1) % (images.length * widthOfOneImage()));
     };
 
-    const interval = setInterval(updateScroll, 30); // This determines the speed of the scroll. Adjust as necessary.
+    const interval = setInterval(updateScroll, 30); // This determines the speed of the scroll.
 
     return () => clearInterval(interval);
   }, [images]);
@@ -27,7 +27,7 @@ const InfiniteCarousel = ({ images = [] }) => {
           style={{ transform: `translateX(-${offset}px)` }}
         >
           {[...images, ...images].map((image, index) => (
-            <img key={index} src={`/images/${image}`} alt="carousel item" />
+            <img key={index} src={image} alt={image} />
           ))}
         </div>
       </div>
