@@ -1,6 +1,5 @@
 import './styles/Product.scss'
 import React from 'react';
-import ProductSlider from './ProductHeader';
 import Menu from './Menu';
 import { findBy } from './helpers';
 import products from './data/products.json';
@@ -42,14 +41,14 @@ const Product = () => {
           {product.ingredients}
         </p>
 
-        <p>
+        <div>
           <strong>Information additionnelle</strong><br/>
           <ul>
             {product.additionnalInfo?.map(info => (
               <li>{info}</li>
             ))}
           </ul>
-        </p>
+        </div>
 
         <hr/>
 

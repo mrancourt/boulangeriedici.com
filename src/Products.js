@@ -9,7 +9,7 @@ function Products({products}) {
     <div className="Products">
       <div className="grid-container">
         {products.map(product => (
-          <Link to={`/nos-produits/${product.id}/${slugify(product.name)}`} state={{ from: 'origin' }}>
+          <Link key={product.id} to={`/nos-produits/${product.id}/${slugify(product.name)}`} state={{ from: 'origin' }}>
             <div className="grid-item" >
               <img src={`/images/${product.image}`} alt={product.name} />
               <div className="favorites-item-text">
