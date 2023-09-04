@@ -1,47 +1,24 @@
 import React from 'react';
+import { findWhere } from './helpers';
+import products from './data/products.json'
 import './styles/Favorites.scss'
 
 function Favorites() {
+
+  let favorites = findWhere(products, "favorite", true)
+
   return (
     <div className="Favorites">
       <h1>Favoris de la famille</h1>
       <div className="grid-container">
-        <div className="grid-item">
-          <img src='./images/vignette-1.png' alt='' />
-          <div className="favorites-item-text">
-            7 Grans Tranché
+        {favorites.map(favorite => (
+          <div key={favorite.id} className="grid-item">
+            <img src={favorite.image} alt={favorite.name} />
+            <div className="favorites-item-text">
+              {favorite.name}
+            </div>
           </div>
-        </div>
-        <div className="grid-item">
-          <img src='./images/vignette-2.png' alt='' />
-          <div className="favorites-item-text">
-            Brun Traditionnel Tranché
-          </div>
-        </div>
-        <div className="grid-item">
-          <img src='./images/vignette-3.png' alt='' />
-          <div className="favorites-item-text">
-            Kamut Tranché
-          </div>
-        </div>
-        <div className="grid-item">
-          <img src='./images/vignette-4.png' alt='' />
-          <div className="favorites-item-text">
-            Matinal Tranché
-          </div>
-        </div>
-        <div className="grid-item">
-          <img src='./images/vignette-5.png' alt='' />
-          <div className="favorites-item-text">
-            Raisins Canneberge Tranché
-          </div>
-        </div>
-        <div className="grid-item">
-          <img src='./images/vignette-6.png' alt='' />
-          <div className="favorites-item-text">
-            Sarasin vert Tranché
-          </div>
-        </div>
+        ))}
       </div>
 
       <p className="link-block text-center">

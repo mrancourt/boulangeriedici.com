@@ -14,7 +14,8 @@
       "Aucun gras ni sucre ajouté",
       "Peut contenir des traces de noix ou de sésame."
     ],
-    "categorie": "pains-a-la-levure"
+    "categorie": "pains-a-la-levure",
+    "favorite": true
   },
   {
     "id": 2,
@@ -26,7 +27,8 @@
       "/images/products/brun-traditionnel-tranche.jpg"
     ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
-    "categorie": "pains-a-la-levure"
+    "categorie": "pains-a-la-levure",
+    "favorite": true
   },
   {
     "id": 3,
@@ -38,7 +40,8 @@
       "/images/products/raisins-canneberge-tranche.jpg"
     ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
-    "categorie": "pains-au-levain"
+    "categorie": "pains-au-levain",
+    "favorite": true
   },
   {
     "id": 4,
@@ -51,7 +54,8 @@
       "/images/products/7-grains-tranche.jpg"
     ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
-    "categorie": "pains-au-levain"
+    "categorie": "pains-au-levain",
+    "favorite": true
   },
   {
     "id": 5,
@@ -162,7 +166,8 @@
       "/images/products/baguette-noix-grnoble-tranche.jpg"
     ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
-    "categorie": "baguettes"
+    "categorie": "baguettes",
+    "favorite": true
   },
   {
     "id": 14,
@@ -174,7 +179,8 @@
       "/images/products/baguette-blanche-tranche.jpg"
     ],
     "nutritionFacts": "/path_to_nutritionFacts_image.jpg",
-    "categorie": "baguettes"
+    "categorie": "baguettes",
+    "favorite": true
   },
   {
     "id": 15,

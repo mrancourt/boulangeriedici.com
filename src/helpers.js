@@ -21,6 +21,10 @@ export const groupBy = (arr, key) => {
   }, {});
 }
 
+export const findWhere = (arr, key, value) => {
+  return arr.filter(obj => obj[key] === value)
+}
+
 export const findBy = (arr, key, value) => {
   return arr.find(obj => obj[key] === value);
 }
