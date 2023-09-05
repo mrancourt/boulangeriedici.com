@@ -6,15 +6,13 @@ import './styles/History.scss'
 function History() {
   return (
     <div className="History">
-
       <HeaderHistory />
-      
       <div className="summary-section">
         <div className="side-text"> </div>
 
         <Collage
           images={[
-            "/images/history-image1.png",
+            "/images/JM-resized.png",
             "/images/history-image2.png",
             "/images/history-image3.png",
           ]}

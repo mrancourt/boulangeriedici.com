@@ -14,11 +14,11 @@ function HistoryShort() {
         </div>
 
         <Collage
-        images={[
-          "/images/history-image1.png",
-          "/images/history-image2.png",
-          "/images/history-image3.png",
-        ]}
+          images={[
+            "/images/history-image1.png",
+            "/images/history-image2.png",
+            "/images/history-image3.png",
+          ]}
         />
 
         <div className="summary-text">
