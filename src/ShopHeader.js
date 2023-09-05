@@ -11,8 +11,12 @@ function ShopHeader() {
     const handleScroll = () => {
       window.addEventListener('scroll', function () {
         let value = window.scrollY;
-        backgroundRef.current.style.top = value * 0.8 + 'px';
-        backgroundMaskRef.current.style.top = value * 0.8 + 'px';
+        if (backgroundRef.current) {
+          backgroundRef.current.style.top = value * 0.8 + 'px';
+        }
+        if (backgroundMaskRef.current) {
+          backgroundMaskRef.current.style.top = value * 0.8 + 'px';
+        }
       })
     }
 
