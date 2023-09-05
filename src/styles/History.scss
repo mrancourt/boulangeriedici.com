@@ -1,4 +1,9 @@
 .History {
+  // TODO: rename that shitty name, review this fix
+  .section * {
+    z-index: 2; // For hero text
+  }
+
   height: 1600px;
 
   .summary-arrow {
@@ -60,8 +65,10 @@
   }
 
   .history-main {
+    position: relative;
     max-width: 1200px;
     margin: auto;
     text-align: center;
+    z-index: 3;
   }
 }

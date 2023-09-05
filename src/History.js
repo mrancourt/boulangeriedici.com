@@ -2,11 +2,16 @@ import React from 'react'
 import Collage from './Collage';
 import HeaderHistory from './HeaderHistory';
 import './styles/History.scss'
+import Menu from './Menu';
 
 function History() {
   return (
     <div className="History">
+      <Menu activeTab="notre-histoire" height={0} />
       <HeaderHistory />
+
+      {/* TODO: rename that shitty name */}
+      <div className="section">
       <div className="summary-section">
         <div className="side-text"> </div>
 
@@ -51,6 +56,7 @@ function History() {
         </p>
       </div>
 
+      </div>
     </div>
   )
 }

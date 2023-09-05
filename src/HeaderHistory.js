@@ -3,14 +3,18 @@ import Menu from './Menu';
 import './styles/HeaderHistory.scss'
 
 function HeaderHistory() {
-  const backgroundRef = useRef(null);
+  let backgroundRef = useRef(null);
+  let backgroundMaskRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
       window.addEventListener('scroll', function () {
         let value = window.scrollY;
         if (backgroundRef.current) {
-          backgroundRef.current.style.top = value * 0.5 + 'px';
+          backgroundRef.current.style.top = value * 0.8 + 'px';
+        }
+        if (backgroundMaskRef.current) {
+          backgroundMaskRef.current.style.top = value * 0.8 + 'px';
         }
       })
     }
@@ -24,13 +28,12 @@ function HeaderHistory() {
 
   return (
     <div className="HeaderHistory">
-      <Menu activeTab="notre-histoire" height={0} />
-
       <section>
-        <img src="./images/history-background.png" alt="history background" className="background" ref={backgroundRef}/>
-        <div className="text-container">
-          <h1>Notre Histoire</h1>
+        <div className="text">
+          <h1>Histoire</h1>
         </div>
+        <img className="background" src='images/history-background.png' alt='Background Image' ref={backgroundRef} />
+        <img className="background-mask" src='/images/history-mask-transparent.png' alt='Background Image' ref={backgroundMaskRef} />
       </section>
     </div>
   )
