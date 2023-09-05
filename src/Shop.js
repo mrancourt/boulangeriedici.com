@@ -30,9 +30,10 @@ function Shop() {
     <div className="Shop">
       <Menu activeTab="nos-produits" height={0} />
       <ShopHeader />
-      <Filters filters={filters} selectedFilter={filter} />
-
-      <Products products={products} />
+      <div className="section">
+        <Filters filters={filters} selectedFilter={filter} />
+        <Products products={products} />
+      </div>
     </div>
   );
 }
