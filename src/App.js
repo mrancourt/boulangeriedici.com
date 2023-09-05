@@ -7,11 +7,13 @@ import Shop from './Shop';
 import Product from './Product'
 import History from './History';
 import ContactSection from './ContactSection';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/nos-produits/:productId" element={<Product />} />
