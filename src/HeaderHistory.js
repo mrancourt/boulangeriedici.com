@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import Menu from './Menu';
 import './styles/HeaderHistory.scss'
 
 function HeaderHistory() {
@@ -32,8 +31,8 @@ function HeaderHistory() {
         <div className="text">
           <h1>Histoire</h1>
         </div>
-        <img className="background" src='images/history-background.png' alt='Background Image' ref={backgroundRef} />
-        <img className="background-mask" src='/images/history-mask-transparent.png' alt='Background Image' ref={backgroundMaskRef} />
+        <img className="background" src='images/history-background.png' alt='Background' ref={backgroundRef} />
+        <img className="background-mask" src='/images/history-mask-transparent.png' alt='Background' ref={backgroundMaskRef} />
       </section>
     </div>
   )

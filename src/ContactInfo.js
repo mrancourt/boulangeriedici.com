@@ -6,6 +6,7 @@ function ContactInfo() {
     <div className="ContactInfo">
       <div className="map-container">
         <iframe width="520" height="400" frameBorder="0" scrolling="no"
+                title="map"
                 marginHeight="0" marginWidth="0"
                 src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=1251%20Route%20du%20Pr%C3%A9sident-Kennedy%20%20Saint-C%C3%B4me-Lini%C3%A8re+(Boulangerie%20D'ici)&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
         </iframe>

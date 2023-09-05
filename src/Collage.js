@@ -35,7 +35,7 @@ const Collage = ({images}) => {
           key={image}
           className={`collage-image-${i}`}
           src={image}
-          alt={`Image ${i}`} />
+          alt={image} />
         )
       }
     </div>

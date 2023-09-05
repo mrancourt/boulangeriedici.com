@@ -30,7 +30,7 @@ function HeaderHome() {
     <div className="HeaderHome">
       <Menu  />
       <section>
-        <img src="./images/home-background.png" className="background-home" ref={backgroundRef}/>
+        <img src="./images/home-background.png" className="background-home" alt="Background" ref={backgroundRef}/>
         <div className="marquee-container" ref={marqueeRef}>
           <span className="marquee-content">
             <h1>Boulangerie d'ici</h1>
