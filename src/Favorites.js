@@ -15,7 +15,12 @@ function Favorites() {
         {favorites.map((favorite, i) => (
           <Link key={favorite.id} to={`/nos-produits/${favorite.id}/${slugify(favorite.name)}`}>
             <div className={`grid-item ${i > 2 ? 'hide-on-mobile' : ''}`}>
-              <img src={favorite.image} alt={favorite.name} />
+              <div className="img-container">
+                <img src={favorite.image} alt={favorite.name} />
+                <div className="hover-icon">
+                  <img src='/images/right-arrow.png' alt='' />
+                </div>
+              </div>
               <div className="favorites-item-text">
                 {favorite.name}
               </div>
@@ -23,13 +28,11 @@ function Favorites() {
           </Link>
         ))}
       </div>
-
       <p className="link-block text-center">
         <a className="link" href='/nos-produits'>Visitez La Boutique{' '}
           <img src='/images/right-arrow.png' height={12} alt='Right arrow' />
         </a>
       </p>
-
     </div>
   );
 }

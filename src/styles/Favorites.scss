@@ -23,19 +23,45 @@
     text-align: left;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 1em;
   }
 
   .grid-item {
     padding: 5px;
-    font-size: 30px;
+    font-size: 2em;
     text-align: center;
+  }
+
+  .img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
 
     img {
       max-width: 100%;
       height: auto;
       display: block;
       border-radius: 10px;
+      transition: transform 0.3s, filter 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+        filter: brightness(80%);
+      }
+    }
+
+    .hover-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      filter: invert(1) brightness(2); // make png white
+    }
+
+    &:hover .hover-icon {
+      opacity: 1;
     }
   }
 
@@ -45,14 +71,14 @@
     font-weight: 500;
   }
 
-  .link-block {
-    margin: 60px;
-  }
-
   @media screen and (min-width: 768px) {
     .grid-container {
       margin: 2em;
       grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+
+    .link-block {
+      margin: 3em;
     }
   }
 }
