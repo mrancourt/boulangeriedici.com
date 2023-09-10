@@ -9,7 +9,7 @@ function HistoryShort() {
         <img src='/images/down-arrow.png' alt='Down arrow' />
       </div>
       <div className="summary-section">
-        <div className="side-text">
+        <div className="side-text hide-on-mobile">
           Depuis 26 ans
         </div>
 

@@ -13,36 +13,11 @@
 
   .summary-section {
     display: flex;
-    height: 620px;
+    flex-direction: column;
+    height: 600px;
 
-    .summary-collage {
-      position: relative;
-      flex-grow: 1;
-
-      .summary-image-1 {
-        position: absolute;
-        left: 116px;
-        top: 364px;
-        width: 286px;
-        height: 236px;
-        z-index: 3;
-      }
-      //
-      .summary-image-2 {
-        position: absolute;
-        top: 46px;
-        width: 452px;
-        height: 372px;
-        z-index: 2;
-      }
-
-      .summary-image-3 {
-        position: absolute;
-        left: 262px;
-        width: 614px;
-        height: 506px;
-        z-index: 1;
-      }
+    .collage {
+      border: 1px solid red;
     }
 
     .side-text {
@@ -58,9 +33,20 @@
       font-size: 27px;
       font-family: "Montserrat", sans-serif;
       line-height: 1.154;
+      box-sizing: border-box;
 
-      padding: 60px 0 0 60px;
-      width: 390px;
+      padding: 2em;
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    .summary-section {
+      flex-direction: row;
+    }
+
+    .summary-text {
+      max-width: 390px;
+    }
+
   }
 }

@@ -1,26 +1,26 @@
-.infinite-carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  overflow: hidden;
-
-  .carousel-container {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-
-    .carousel-images {
-      display: flex;
-      will-change: transform;
-
-      img {
-        max-height: 30vh;
-
-        flex-shrink: 0;
-        width: auto;
-      }
-    }
-  }
-}
+//.infinite-carousel {
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  width: 100%;
+//  overflow: hidden;
+//
+//  .carousel-container {
+//    display: flex;
+//    width: 100%;
+//    overflow: hidden;
+//    position: relative;
+//
+//    .carousel-images {
+//      display: flex;
+//      will-change: transform;
+//
+//      img {
+//        max-height: 30vh;
+//
+//        flex-shrink: 0;
+//        width: auto;
+//      }
+//    }
+//  }
+//}

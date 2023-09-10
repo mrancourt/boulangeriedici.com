@@ -1,28 +1,60 @@
+// TODO: finish responsivness
+
 .collage {
-  position: relative;
+  overflow-y: hidden;
+
+  height: 100%;
   width: 100%;
 
   img {
     position: absolute;
     top: 0;
-    left: 0;
   }
 
   img:nth-child(1) {
-    top: 250px;
-    left: 360px;
+    width: 50%;
+    right: 2em;
     z-index: 1;
   }
 
   img:nth-child(2) {
-    top: 350px;
-    left: 100px;
+    width: 40%;
+    left: 2em;
     z-index: 2;
   }
 
   img:nth-child(3) {
-    top: 500px;
-    left: 200px;
+    width: 30%;
+    left: 15%;
     z-index: 3;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    width: 100%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    img:nth-child(1) {
+      top: 250px;
+      left: 360px;
+      z-index: 1;
+    }
+
+    img:nth-child(2) {
+      top: 350px;
+      left: 100px;
+      z-index: 2;
+    }
+
+    img:nth-child(3) {
+      top: 500px;
+      left: 200px;
+      z-index: 3;
+    }
   }
 }

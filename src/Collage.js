@@ -1,3 +1,5 @@
+// TODO: finish responsivness
+
 import React, { useEffect, useRef } from 'react';
 import './styles/Collage.scss'
 
@@ -14,9 +16,18 @@ const Collage = ({images}) => {
         const images = collageRef.current.querySelectorAll('img');
 
         if (images.length > 0) {
-          images[0].style.top = 250 -scrollY * .4 + 'px';
-          images[1].style.top = 350 -scrollY * .3 + 'px';
-          images[2].style.top = 500 -scrollY * .2 + 'px';
+          // TODO: revisit if window.screen.height bight be better.
+          if (window.screen.width < 768) {
+            // mobile
+            images[0].style.top = 250 -scrollY * .4 + 'px';
+            images[1].style.top = 250 -scrollY * .3 + 'px';
+            images[2].style.top = 300 -scrollY * .2 + 'px';
+          } else {
+            // desktop
+            images[0].style.top = 250 -scrollY * .4 + 'px';
+            images[1].style.top = 350 -scrollY * .3 + 'px';
+            images[2].style.top = 500 -scrollY * .2 + 'px';
+          }
         }
       })
     }

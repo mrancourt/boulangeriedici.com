@@ -9,6 +9,7 @@ const tabs = {
 
 const Menu = ({activeTab, height}) => {
 
+  // TODO: see if that really make sense in mobile?
   const [opacity, setOpacity] = useState(1);
   const style = {
     opacity: opacity
@@ -37,13 +38,26 @@ const Menu = ({activeTab, height}) => {
     }
   });
 
+  const [menuActive, setMenuActive] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
   return (
-    <div className="container">
-      <div className="Menu fading-element" style={style}>
-        <a href='/'>
-          <img className="menu-logo " src="/images/logo.png" alt="Boulangerie d'ici" />
-        </a>
-        <ul>
+    <div className="Menu fading-element" style={style}>
+      <nav>
+        <div className="logo">
+          <a href="/" className="logo">
+            <img className="menu-logo " src="/images/logo.png" alt="Boulangerie d'ici" />
+          </a>
+        </div>
+        <div className={`menu-toggle ${menuActive ? 'active' : ''}`} onClick={toggleMenu}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+        <ul className={`nav-list ${menuActive ? 'active' : ''}`}>
           <li className={`menu-link ${!activeTab ? 'active' : ''}`}>
             <a href='/'>Maison</a>
           </li>
@@ -54,7 +68,7 @@ const Menu = ({activeTab, height}) => {
             </li>
           ))}
         </ul>
-      </div>
+      </nav>
     </div>
   )
 }

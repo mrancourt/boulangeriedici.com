@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="Footer">
       <div className="footer-content">
-        <div className="footer-section">
+        <div className="footer-section hide-on-mobile">
           <h2>Plan du Site</h2>
           <ul>
             <li>

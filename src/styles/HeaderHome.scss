@@ -1,5 +1,4 @@
 // TODO: Fix scrolling z-index
-
 .HeaderHome {
   background-color: #d8d9de;
 
@@ -38,12 +37,10 @@
 
     .marquee-content {
       flex-shrink: 0;
-      display: flex;
       justify-content: space-around;
       min-width: 100%;
       gap: var(--gap);
-
-      animation: scroll 45s linear infinite;
+      display: none;
     }
 
     .text-container {
@@ -51,7 +48,7 @@
       position: relative;
       bottom: 30px;
       color: #fff;
-      font-size: 5em;
+      font-size: 4em;
       z-index: 3;
     }
 
@@ -66,6 +63,13 @@
     }
     to {
       transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .marquee-container .marquee-content {
+      display: flex;
+      animation: scroll 45s linear infinite;
     }
   }
 }

@@ -12,9 +12,9 @@ function Favorites() {
     <div className="Favorites">
       <h1>Favoris de la famille</h1>
       <div className="grid-container">
-        {favorites.map(favorite => (
+        {favorites.map((favorite, i) => (
           <Link key={favorite.id} to={`/nos-produits/${favorite.id}/${slugify(favorite.name)}`}>
-            <div className="grid-item">
+            <div className={`grid-item ${i > 2 ? 'hide-on-mobile' : ''}`}>
               <img src={favorite.image} alt={favorite.name} />
               <div className="favorites-item-text">
                 {favorite.name}
