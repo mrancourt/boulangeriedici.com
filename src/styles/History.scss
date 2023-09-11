@@ -1,74 +1,51 @@
-//.History {
-//  // TODO: rename that shitty name, review this fix
-//  .section * {
-//    z-index: 2; // For hero text
-//  }
-//
-//  height: 1600px;
-//
-//  .summary-arrow {
-//    margin: 40px 0 60px 0;
-//    text-align: center;
-//  }
-//
-//  .summary-section {
-//    display: flex;
-//    height: 620px;
-//
-//    .summary-collage {
-//      position: relative;
-//      flex-grow: 1;
-//
-//      .summary-image-1 {
-//        position: absolute;
-//        left: 116px;
-//        top: 364px;
-//        width: 286px;
-//        height: 236px;
-//        z-index: 3;
-//      }
-//      //
-//      .summary-image-2 {
-//        position: absolute;
-//        top: 46px;
-//        width: 452px;
-//        height: 372px;
-//        z-index: 2;
-//      }
-//
-//      .summary-image-3 {
-//        position: absolute;
-//        left: 262px;
-//        width: 614px;
-//        height: 506px;
-//        z-index: 1;
-//      }
-//    }
-//
-//    .side-text {
-//      font-size: 20px;
-//      writing-mode: tb-rl;
-//      transform: rotate(-180deg);
-//
-//      text-align: center;
-//      padding: 0 60px 0 20px;
-//    }
-//
-//    .summary-text {
-//      font-size: 27px;
-//      font-family: "Montserrat", sans-serif;
-//      line-height: 1.154;
-//
-//      padding: 60px 60px 0 60px;
-//      width: 320px;
-//    }
-//  }
-//
-//  .history-main {
-//    position: relative;
-//    max-width: 1200px;
-//    margin: auto;
-//    text-align: center;
-//    z-index: 3;
-//  }
-//}
+.History {
+  // TODO: rename that shitty name, review this fix
+  .section * {
+    z-index: 2; // For hero text
+  }
+
+  .summary-arrow {
+    margin: 40px 0 60px 0;
+    text-align: center;
+  }
+
+  // TODO: use flex like the other collage
+  .summary-section {
+    display: flex;
+
+    .side-text {
+      font-size: 20px;
+      writing-mode: tb-rl;
+      transform: rotate(-180deg);
+
+      text-align: center;
+      padding: 0 60px 0 20px;
+    }
+
+    .summary-text {
+      font-size: 27px;
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.154;
+
+      padding: 60px 60px 0 60px;
+      width: 320px;
+    }
+  }
+
+  .history-main {
+    padding: 2em;
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    //text-align: center;
+    z-index: 3;
+  }
+
+
+  @media screen and (min-width: 768px) {
+    .history-main {
+      text-align: center;
+    }
+  }
+
+}

@@ -3,6 +3,7 @@ import './styles/Menu.scss'
 
 const tabs = {
   "notre-histoire": "Notre Histoire",
+  // "points-de-ventes": "Points de ventes",
   "nos-produits": "Boutique",
   "contactez-nous": "Contactez-nous",
 }

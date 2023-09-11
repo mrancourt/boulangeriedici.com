@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './styles/Carousel.scss';
+import { slugify } from './helpers';
+import { Link } from 'react-router-dom';
 
 function Carousel({ products }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,16 +20,22 @@ function Carousel({ products }) {
 
   const offset = -(currentIndex * 40) + '%';
 
+  // TODO: remove current product
   return (
     <div className="carousel-container">
       <div className="carousel-track" style={{ transform: `translateX(${offset})` }}>
         {products.map(product => (
-          <div className="carousel-item" key={product.id}>
-            <img src={product.image} alt={product.name} />
+          <Link key={product.id} to={`/nos-produits/${product.id}/${slugify(product.name)}`} className="carousel-item">
+            <div className="carousel-img-container">
+              <img src={product.image} alt={product.name} />
+              <div className="hover-icon">
+                <img src='/images/right-arrow.png' alt='' />
+              </div>
+            </div>
             <div className="carousel-item-text">
               {product.name}
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 

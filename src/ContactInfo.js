@@ -4,7 +4,7 @@ import './styles/ContactInfo.scss'
 function ContactInfo() {
   return (
     <div className="ContactInfo">
-      <div className="map-container">
+      <div className="map-container hide-on-mobile">
         <iframe width="520" height="400" frameBorder="0" scrolling="no"
                 title="map"
                 marginHeight="0" marginWidth="0"

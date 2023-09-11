@@ -6,7 +6,7 @@ const InfiniteCarousel = ({ images = [] }) => {
   const imagesRef = useRef(null);
 
   const widthOfOneImage = () => {
-    return imagesRef.current ? imagesRef.current.firstChild.clientWidth : 0;
+    // return imagesRef.current ? imagesRef.current.firstChild.clientWidth : 0;
   };
 
   useEffect(() => {

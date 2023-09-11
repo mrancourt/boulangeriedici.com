@@ -12,7 +12,7 @@ function ContactForm() {
             <input type="text" placeholder="Courriel..." />
         </div>
         <textarea rows={8} className="textarea" placeholder="Question ou commentaire..."/>
-        <p>
+        <p className="form-link">
           <a className="link" href='/notre-histoire'>Envoyer{' '}
             <img src='/images/right-arrow.png' height={12} alt='Right arrow' />
           </a>

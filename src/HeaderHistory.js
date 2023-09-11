@@ -29,7 +29,7 @@ function HeaderHistory() {
     <div className="HeaderHistory">
       <section>
         <div className="text">
-          <h1>Histoire</h1>
+          <h1>Notre Histoire</h1>
         </div>
         <img className="background" src='images/history-background.png' alt='Background' ref={backgroundRef} />
         <img className="background-mask" src='/images/history-mask-transparent.png' alt='Background' ref={backgroundMaskRef} />

@@ -31,7 +31,9 @@ function Shop() {
       <Menu activeTab="nos-produits" height={0} />
       <ShopHeader />
       <div className="section">
-        <Filters filters={filters} selectedFilter={filter} />
+        <div className="hide-on-mobile">
+          <Filters filters={filters} selectedFilter={filter} />
+        </div>
         <Products products={products} />
       </div>
     </div>

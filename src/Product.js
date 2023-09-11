@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Carousel from './Carousel';
 import Menu from './Menu';
 import InfiniteCarousel from './InfiniteCarousel';
@@ -17,6 +17,9 @@ const Product = () => {
   let { productId } = useParams();
   let product = findBy(products, "id", parseInt(productId));
 
+  const [showNutritionFacts, setShowNutritionFacts] = useState(false);
+
+
   // TODO: fix this to keep the header
   if (!product) {
     return <ProductNotFound />
@@ -24,7 +27,7 @@ const Product = () => {
 
   return (
     <div className="Product">
-      <Menu activeTab="nos-produits" height={120} />
+      <Menu activeTab="nos-produits" height={100} />
       <InfiniteCarousel images={product.images} />
 
       <div className="container">
@@ -52,21 +55,36 @@ const Product = () => {
               </ul>
             </div>
           </div>
-          <div className="section text-center">
+
+          <div className="section text-center hide-on-mobile">
             <img className="nutritions-facts" src={product.nutritionFacts} alt={`Valeurs nutritives - ${product.name}`} />
           </div>
+
+          <hr/>
+
+          {/* TODO: fix this whole thing, mobile vs desktop is too messy */}
+          <div className="nutritions-facts-link-container hide-on-desktop">
+            <a className="link nutritions-facts-link" onClick={() => setShowNutritionFacts(!showNutritionFacts)}>Valeurs Nutritives{' '}
+              <img src='/images/right-arrow.png' height={12} alt='Right arrow' />
+            </a>
+          </div>
+
+          {showNutritionFacts && (
+            <div className="section text-center">
+              <img className="nutritions-facts" src={product.nutritionFacts} alt={`Valeurs nutritives - ${product.name}`} />
+            </div>
+          )}
+
+          <hr className="hide-on-mobile"/>
+
         </div>
-
-        <hr/>
-
-        {/*<a className="link" href='/nutrition-facts'>Valeurs Nutritives{' '}*/}
-        {/*  <img src='/images/right-arrow.png' height={12} alt='Right arrow' />*/}
-        {/*</a>*/}
-
-        <h2 className="text-product-suggestions">Vous aimerez aussi</h2>
       </div>
 
-      <Carousel products={products} />
+
+      <div className="hide-on-mobile">
+        <h2 className="text-product-suggestions">Vous aimerez aussi</h2>
+        <Carousel products={products} />
+      </div>
     </div>
   );
 }

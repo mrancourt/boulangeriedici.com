@@ -15,6 +15,7 @@ function History() {
       <div className="summary-section">
         <div className="side-text"> </div>
 
+        {/*TODO: fix collage mobile and whatnot */}
         <Collage
           images={[
             "/images/JM-resized.png",

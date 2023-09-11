@@ -7,7 +7,7 @@ import './styles/Contact.scss'
 function Contact() {
   return (
     <div className="Contact">
-      <Menu activeTab="contact" height={120} />
+      <Menu activeTab="contact" height={100} />
       <ContactInfo />
       <ContactForm />
     </div>

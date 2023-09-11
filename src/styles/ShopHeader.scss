@@ -1,62 +1,62 @@
-//.ShopHeader {
-//   //TODO: fix header
-//
-//  position: relative;
-//  width: 100%;
-//  height: 70vh;
-//  overflow: hidden;
-//  display: flex;
-//  justify-content: center;
-//  align-items: flex-end;
-//
-//  .background {
-//    z-index: 1;
-//  }
-//
-//  .background-mask {
-//    z-index: 2;
-//  }
-//
-//  .text {
-//    position: fixed;
-//    z-index: 2;
-//    font-size: 5em;
-//    top: 30vh;
-//    transform: translate(-50%, -50%);
-//    color: #fff;
-//    letter-spacing: .6em;
-//    text-transform: uppercase;
-//  }
-//
-//  img {
-//    position: absolute;
-//    top: 0;
-//    left: 0;
-//    width: 100%;
-//    height: 100%;
-//    object-fit: cover;
-//    pointer-events: none;
-//  }
-//
-//  section::before {
-//    content: "";
-//    position: absolute;
-//    top: 0;
-//    left: 0;
-//    width: 100%;
-//    height: 60%;
-//    background: linear-gradient(to bottom, #cccccc, transparent);
-//    z-index: 2;  /* This ensures the gradient is below the text but above the image. */
-//  }
-//
-//  section::after {
-//    content: "";
-//    position: absolute;
-//    bottom: 0;
-//    left: 0;
-//    width: 100%;
-//    height: 20%;
-//    background: linear-gradient(to top, rgba(51, 51, 51, .3), transparent);
-//    z-index: 2;
-//  }
-//}
+.ShopHeader {
+   //TODO: fix header
+
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  .background {
+    z-index: 1;
+  }
+
+  .background-mask {
+    z-index: 2;
+  }
+
+  .text {
+    position: fixed;
+    z-index: 2;
+    font-size: clamp(2em, 5vw, 4em);
+    top: 30vh;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    letter-spacing: .6em;
+    text-transform: uppercase;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to bottom, #cccccc, transparent);
+    z-index: 2;  /* This ensures the gradient is below the text but above the image. */
+  }
+
+  section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to top, rgba(51, 51, 51, .3), transparent);
+    z-index: 2;
+  }
+}

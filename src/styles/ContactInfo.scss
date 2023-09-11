@@ -1,14 +1,28 @@
-//.ContactInfo {
-//  display: flex;
-//  justify-content: center;
-//
-//  gap: 20px;
-//
-//  .map-container {
-//    margin: 30px;
-//  }
-//
-//  .map-image {
-//    width: 300px;
-//  }
-//}
+.ContactInfo {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2em;
+
+  display: flex;
+  gap: 20px;;
+
+  .map-container {
+    margin: 2em;
+  }
+
+  .map-image {
+    width: 300px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+
+    .map-container {
+      margin: 30px;
+    }
+
+    .map-image {
+      width: 300px;
+    }
+  }
+}
