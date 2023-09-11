@@ -29,7 +29,7 @@ function Carousel({ products }) {
             <div className="carousel-img-container">
               <img src={product.image} alt={product.name} />
               <div className="hover-icon">
-                <img src='/images/right-arrow.png' alt='' />
+                {/*<img src='/images/right-arrow.png' alt='' />*/}
               </div>
             </div>
             <div className="carousel-item-text">

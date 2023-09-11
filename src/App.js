@@ -8,6 +8,7 @@ import Product from './Product'
 import History from './History';
 import ContactSection from './ContactSection';
 import ScrollToTop from './ScrollToTop';
+import PointOfSales from './PointOfSales';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/points-de-ventes" element={<PointOfSales />} />
           <Route path="/nos-produits/:productId" element={<Product />} />
           <Route path="/nos-produits/:productId/:name" element={<Product />} />
           <Route path="/nos-produits" element={<Shop />}>

@@ -1,0 +1,114 @@
+{
+  "Points de vente": {
+    "Saint-Côme-Linière": [
+      {
+        "name": "Les Marchés Tradition",
+        "address": "940 Rue Principale"
+      }
+    ],
+    "Saint-Georges": [
+      {
+        "name": "Dépanneur L'Essentiel",
+        "address": "12755 36e Avenue"
+      },
+      {
+        "name": "IGA extra St-Georges de Beauce",
+        "address": "8980 Boulevard Lacroix"
+      },
+      {
+        "name": "IGA Rodrigue et Filles",
+        "address": "1950 Boulevard Dionne"
+      },
+      {
+        "name": "IGA families Rodrigue et Groleau",
+        "address": "911 150e Rue"
+      },
+      {
+        "name": "Le Jardin des Sages",
+        "address": "10435 1e Avenue"
+      },
+      {
+        "name": "Le Grand Marché",
+        "address": "12120, 1e Avenue"
+      },
+      {
+        "name": "Les Roy de la Pomme",
+        "address": "1020 Av. de Saint-Jean-de-la-Lande"
+      },
+      {
+        "name": "Naturosanté",
+        "address": "8585 Boulevard Lacroix"
+      },
+      {
+        "name": "Metro Laval Veilleux",
+        "address": "17850 Boulevard Lacroix"
+      }
+    ],
+    "Saint-Prosper": [
+      {
+        "name": "L'Inter-Marché",
+        "address": "2600-2798 25e Avenue"
+      }
+    ],
+    "Beauceville": [
+      {
+        "name": "IGA Beauceville",
+        "address": "630D Boulevard Renault D"
+      }
+    ],
+    "Lac-Etchemin": [
+      {
+        "name": "Metro Lac Etchemin",
+        "address": "1575 Route 277"
+      }
+    ],
+    "Notre-Dame-des-Pins": [
+      {
+        "name": "Marché Gourmand Un des 2",
+        "address": "111 30e Rue suite 101"
+      }
+    ],
+    "Saint-Benoît-Labre": [
+      {
+        "name": "Marché Saint-Benoît",
+        "address": "130 Rue Principale"
+      }
+    ],
+    "Saint-Joseph": [
+      {
+        "name": "IGA Marché Pierre Jobidon",
+        "address": "1021 Avenue du Palais #101"
+      }
+    ],
+    "Saint-Victor": [
+      {
+        "name": "Les Marchés Tradition",
+        "address": "137 Rue Commerciale"
+      }
+    ],
+    "Saint-Zacharie": [
+      {
+        "name": "Cado-Gaz inc.",
+        "address": "713, 15e Rue"
+      }
+    ]
+  },
+  "Restaurants": {
+    "Saint-Georges": [
+      {
+        "name": "Restaurant 1668",
+        "address": "12120 1e Avenue"
+      },
+      {
+        "name": "VG Café",
+        "address": "11780 1e Avenue"
+      }
+    ],
+    "Saint-Côme-Linière": [
+      {
+        "name": "Resto-Bar Le Brûlé",
+        "address": "1327 Rue Principale"
+      }
+    ]
+  }
+}

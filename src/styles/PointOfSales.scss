@@ -1,0 +1,55 @@
+.PointOfSales {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+  }
+
+  .pos-title {
+    font-size: 1.7em;
+  }
+
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .column {
+    flex: 1;
+    min-width: calc(50% - 20px);
+    padding: 10px;
+  }
+
+  .location {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 5px;
+  }
+
+  .point-of-sale {
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 1.2em;
+  }
+
+  .address {
+    font-size: 0.9em;
+    color: #777;
+  }
+
+  @media (max-width: 768px) {
+    .columns {
+      flex-direction: column;
+    }
+
+    .column {
+      min-width: 100%;
+    }
+  }
+}
+

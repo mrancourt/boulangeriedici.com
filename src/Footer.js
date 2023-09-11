@@ -15,6 +15,9 @@ function Footer() {
               <a href='/notre-histoire'>Notre Histoire</a>
             </li>
             <li>
+              <a href='/nos-produits'>Points de ventes</a>
+            </li>
+            <li>
               <a href='/nos-produits'>Boutique</a>
             </li>
             <li>

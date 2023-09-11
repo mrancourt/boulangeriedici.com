@@ -5,7 +5,6 @@ import './styles/Favorites.scss'
 import { Link } from 'react-router-dom';
 
 function Favorites() {
-
   let favorites = findWhere(products, "favorite", true)
 
   return (
@@ -18,7 +17,7 @@ function Favorites() {
               <div className="img-container">
                 <img src={favorite.image} alt={favorite.name} />
                 <div className="hover-icon">
-                  <img src='/images/right-arrow.png' alt='' />
+                  {/*<img src='/images/right-arrow.png' alt='' />*/}
                 </div>
               </div>
               <div className="favorites-item-text">
