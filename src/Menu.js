@@ -23,6 +23,11 @@ const Menu = ({activeTab, height}) => {
   useEffect(() => {
     const handleScroll = () => {
       window.addEventListener('scroll', function () {
+        // Disable for mobile
+        if (window.screen.width <= 768) {
+          return
+        }
+
         const fadeLength = 100;
         let scrollPos = window.scrollY;
         let newOpacity = 1 - (scrollPos / fadeLength);

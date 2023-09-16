@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Router>
-        <ScrollToTop />
+        <ScrollToTop exceptPrefixes={["nos-produits/categorie"]} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/points-de-ventes" element={<PointOfSales />} />
