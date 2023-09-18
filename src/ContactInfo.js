@@ -15,14 +15,15 @@ function ContactInfo() {
         <div className="footer-section">
           <h4>Addresse</h4>
           1251 Route du Président-Kennedy <br/>
-          Saint-Côme-Linière, QC G0M 1J0 <br/>
+          Saint-Côme-Linière <br/>
+          QC G0M 1J0 <br/>
           <h4>Téléphone</h4>
           <p>
-            1-418-685-4650
+            <a href="tel:1-833-685-7246">1-418-685-4650</a>
           </p>
           <h4>Courriel</h4>
           <p>
-            boulangeriedici@gmail.com <br/>
+            <a href="mailto:boulangeriedici@gmail.com">boulangeriedici@gmail.com</a> <br/>
           </p>
         </div>
       </div>

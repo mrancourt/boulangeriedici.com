@@ -12,52 +12,47 @@
   }
 
   img:nth-child(1) {
-    top: 80vh;
-    width: 40vw;
-    left: 30vw;
+    top: 70vh;
+    width: 70vw;
+    right: 5vw;
     z-index: 1;
   }
 
   img:nth-child(2) {
-    top: 75vh;
-    width: 30vw;
-    left: 15vw;
+    top: 55vh;
+    width: 50vw;
+    left: 5vw;
     z-index: 2;
   }
 
   img:nth-child(3) {
-    top: 70vh;
-    width: 20vw;
+    top: 60vh;
+    width: 30vw;
     left: 20vw;
     z-index: 3;
   }
-  //
-  //@media screen and (min-width: 768px) {
-  //  position: relative;
-  //  width: 100%;
-  //
-  //  img {
-  //    position: absolute;
-  //    top: 0;
-  //    left: 0;
-  //  }
-  //
-  //  img:nth-child(1) {
-  //    top: 250px;
-  //    left: 360px;
-  //    z-index: 1;
-  //  }
-  //
-  //  img:nth-child(2) {
-  //    top: 350px;
-  //    left: 100px;
-  //    z-index: 2;
-  //  }
-  //
-  //  img:nth-child(3) {
-  //    top: 500px;
-  //    left: 200px;
-  //    z-index: 3;
-  //  }
-  //}
+
+  @media screen and (min-width: 768px) {
+    img:nth-child(1) {
+      top: 80vh;
+      width: 40vw;
+      left: 30vw;
+      z-index: 1;
+    }
+
+    img:nth-child(2) {
+      top: 75vh;
+      width: 30vw;
+      left: 15vw;
+      z-index: 2;
+    }
+
+    img:nth-child(3) {
+      top: 70vh;
+      width: 20vw;
+      left: 20vw;
+      z-index: 3;
+    }
+  }
+
 }

@@ -18,9 +18,13 @@ function History() {
         {/*TODO: fix collage mobile and whatnot */}
         <Collage
           images={[
-            "/images/JM-resized.png",
-            "/images/history-image2.png",
-            "/images/history-image3.png",
+            "/images/jm-transparent2.png",
+            "/images/famille-boulange.jpg",
+            // "/images/history-image3.png",
+          ]}
+          styles={[
+            {top: 900, zIndex: 2},
+            {top: 900, zIndex: 1, borderRadius: 10}
           ]}
         />
 
@@ -34,10 +38,10 @@ function History() {
         </div>
       </div>
       <div className="history-main">
-        <h3>Some Welcome Title</h3>
+        <h3>Du rang des carreaux, à  Saint-Come</h3>
 
         <p>
-          Envie de changement, Jean-Marc a décidé d’aller suivre une formation de 3 jour dans une boulangerie dans la ville de Sherbrooke, qui est malheureusement fermé à ce jour. Revenu à St-philibert, il a acheté un pétrin, un four et quelque fourniture de boulangerie.
+          Fondée en 1997 par Jean-Marc Rancourt et Louise Boily, la Boulangerie d'ici raconte une histoire de passion familiale. Poussé par l'envie de nouveauté, Jean-Marc s'est formé lors d'un stage de trois jours dans une boulangerie de Sherbrooke, qui, malheureusement, n'existe plus aujourd'hui. De retour à Saint-philibert, armé d'un pétrin, d'un four et de quelques fournitures essentielles, il a commencé son aventure.
         </p>
 
         <h4>
@@ -45,16 +49,13 @@ function History() {
         </h4>
 
         <p>
-          Après 22 ans (2019) de fabrication de pains fait avec amour et passion, il cède la boulangerie a son fils Étienne Rancourt.
+          Avec le temps, l'expérience est venue, et avec elle, une clientèle fidèle et croissante. Après 22 ans de dévouement, de pain confectionné avec amour et passion, Jean-Marc a confié les rênes de la boulangerie à son fils, Étienne Rancourt.
         </p>
 
         <p>
-          Depuis 2019 lors de mon acquisition de la boulangerie, je me suis mis comme objectif de vous offrir le meilleur pain qui soit avec des ingrédients naturel tout en le faisant avec cœur et passion.
+          Depuis cette transition en 2019, je m'engage, en tant qu'Étienne, à perpétuer cet héritage. Je me suis donné pour mission de vous proposer le meilleur pain, élaboré à partir d'ingrédients naturels et façonné avec cœur et passion. Aujourd'hui, la Boulangerie d'ici est fière de servir ses délices dans 19 points de vente répartis dans 9 villes et villages.
         </p>
 
-        <p>
-          A ce jour la boulangerie d’ici dessert dans 19 point de vente dans 9 ville et village.
-        </p>
       </div>
 
       </div>

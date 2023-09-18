@@ -28,7 +28,12 @@ const Product = () => {
   return (
     <div className="Product">
       <Menu activeTab="nos-produits" height={100} />
-      <InfiniteCarousel images={product.images} />
+
+      <div className="backdrop-container">
+        <div className="backdrop">
+          <InfiniteCarousel images={product.images} />
+        </div>
+      </div>
 
       <div className="container">
         <h1>{product.name}</h1>

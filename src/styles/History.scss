@@ -1,5 +1,6 @@
 .History {
   // TODO: rename that shitty name, review this fix
+
   .section * {
     z-index: 2; // For hero text
   }
@@ -12,23 +13,21 @@
   // TODO: use flex like the other collage
   .summary-section {
     display: flex;
-
-    .side-text {
-      font-size: 20px;
-      writing-mode: tb-rl;
-      transform: rotate(-180deg);
-
-      text-align: center;
-      padding: 0 60px 0 20px;
-    }
+    flex-direction: column;
+    height: 600px;
 
     .summary-text {
-      font-size: 27px;
+      // TODO: fix this that's pretty ugly
+      position: relative;
+
+      background: #fff;
+
+      font-size: 1.7em;
       font-family: "Montserrat", sans-serif;
       line-height: 1.154;
 
-      padding: 60px 60px 0 60px;
-      width: 320px;
+      padding: 0 2em;
+      width: 100%;
     }
   }
 
@@ -37,15 +36,27 @@
     position: relative;
     max-width: 1200px;
     margin: auto;
-    //text-align: center;
     z-index: 3;
+    font-size: 1.4em;
   }
 
-
   @media screen and (min-width: 768px) {
+    .summary-section {
+      flex-direction: row;
+    }
+
     .history-main {
       text-align: center;
     }
-  }
 
+    .summary-text {
+      margin: auto 0;
+      font-size: 27px;
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.154;
+
+      padding: 4em 2em;
+      width: 40vw!important;
+    }
+  }
 }

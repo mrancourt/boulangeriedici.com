@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import './styles/Collage.scss'
 
-const Collage = ({images}) => {
+const Collage = ({images, styles}) => {
 
   let xScrollPosition;
   let yScrollPosition;
@@ -57,9 +57,17 @@ const Collage = ({images}) => {
       const images = collageRef.current.querySelectorAll('img');
 
       if (images.length) {
-        setTranslate(0, yScrollPosition * -0.6, images[0]);
-        setTranslate(0, yScrollPosition * -0.4, images[1]);
-        setTranslate(0, yScrollPosition * -0.2, images[2]);
+        if (images[0]) {
+          setTranslate(0, yScrollPosition * -0.6, images[0]);
+        }
+
+        if (images[1]) {
+          setTranslate(0, yScrollPosition * -0.4, images[1]);
+        }
+
+        if (images[2]) {
+          setTranslate(0, yScrollPosition * -0.2, images[2]);
+        }
       }
     }
 
@@ -78,7 +86,9 @@ const Collage = ({images}) => {
           key={image}
           className={`collage-image-${i}`}
           src={image}
-          alt={image} />
+          alt={image}
+          style={styles ? styles[i] : null}
+          />
         )
       }
     </div>
