@@ -5,26 +5,35 @@ import './styles/HeaderHome.scss'
 function HeaderHome() {
   const backgroundRef = useRef(null);
   const marqueeRef = useRef(null);
+  const requestRef = React.useRef(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      window.addEventListener('scroll', function () {
-        let value = window.scrollY;
-        if (backgroundRef.current) {
-          backgroundRef.current.style.top = value * 0.5 + 'px';
-        }
-        if (marqueeRef.current) {
-          marqueeRef.current.style.top = 0 + 'px';
-        }
-      })
+  let xScrollPosition;
+  let yScrollPosition;
+
+  const setTranslate = (xPos, yPos, el) => {
+    el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
+  }
+
+  const animate = time => {
+    if (xScrollPosition !== window.scrollX || yScrollPosition !== window.scrollY) {
+      xScrollPosition = window.scrollX;
+      yScrollPosition = window.scrollY;
+      if (backgroundRef.current) {
+        setTranslate(0, yScrollPosition * 0.5, backgroundRef.current);
+      }
+      if (marqueeRef.current) {
+        setTranslate(0, 0, marqueeRef.current);
+      }
     }
 
-    window.addEventListener('scroll', handleScroll);
-    
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    }
-  });
+    requestRef.current = requestAnimationFrame(animate);
+  }
+
+  React.useEffect(() => {
+    requestRef.current = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(requestRef.current);
+  }, []);
+
 
   return (
     <div className="HeaderHome">

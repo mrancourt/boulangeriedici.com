@@ -4,26 +4,36 @@ import './styles/HeaderHistory.scss'
 function HeaderHistory() {
   let backgroundRef = useRef(null);
   let backgroundMaskRef = useRef(null);
+  const requestRef = React.useRef(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      window.addEventListener('scroll', function () {
-        let value = window.scrollY;
-        if (backgroundRef.current) {
-          backgroundRef.current.style.top = value * 0.8 + 'px';
-        }
-        if (backgroundMaskRef.current) {
-          backgroundMaskRef.current.style.top = value * 0.8 + 'px';
-        }
-      })
+  let xScrollPosition;
+  let yScrollPosition;
+
+  const setTranslate = (xPos, yPos, el) => {
+    el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
+  }
+
+  const animate = time => {
+    if (xScrollPosition !== window.scrollX || yScrollPosition !== window.scrollY) {
+      xScrollPosition = window.scrollX;
+      yScrollPosition = window.scrollY;
+      if (backgroundRef.current) {
+        console.log("update background");
+        setTranslate(0, yScrollPosition * 0.8, backgroundRef.current);
+      }
+      if (backgroundMaskRef.current) {
+        console.log("update background mask");
+        setTranslate(0, yScrollPosition * 0.8, backgroundMaskRef.current);
+      }
     }
 
-    window.addEventListener('scroll', handleScroll);
+    requestRef.current = requestAnimationFrame(animate);
+  }
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    }
-  });
+  React.useEffect(() => {
+    requestRef.current = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(requestRef.current);
+  }, []);
 
   return (
     <div className="HeaderHistory">

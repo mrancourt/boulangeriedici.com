@@ -26,7 +26,7 @@ const InfiniteCarousel = ({ images = [] }) => {
           className="carousel-images"
           style={{ transform: `translateX(-${offset}px)` }}
         >
-          {[...images, ...images].map((image, index) => (
+          {images.map((image, index) => (
             <img key={index} src={image} alt={image} />
           ))}
         </div>

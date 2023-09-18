@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './styles/ShopHeader.scss'
 
 // TODO: optimize performance around scroll handler
@@ -6,26 +6,38 @@ import './styles/ShopHeader.scss'
 function ShopHeader() {
   let backgroundRef = useRef(null);
   let backgroundMaskRef = useRef(null);
+  const requestRef = React.useRef(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      window.addEventListener('scroll', function () {
-        let value = window.scrollY;
-        if (backgroundRef.current) {
-          backgroundRef.current.style.top = value * 0.8 + 'px';
-        }
-        if (backgroundMaskRef.current) {
-          backgroundMaskRef.current.style.top = value * 0.8 + 'px';
-        }
-      })
+  const [backgroundLoaded, setBackgroundLoaded] = useState(false)
+
+  let xScrollPosition;
+  let yScrollPosition;
+
+  const setTranslate = (xPos, yPos, el) => {
+    el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
+  }
+
+  const animate = time => {
+    if (xScrollPosition !== window.scrollX || yScrollPosition !== window.scrollY) {
+      xScrollPosition = window.scrollX;
+      yScrollPosition = window.scrollY;
+      if (backgroundRef.current) {
+        console.log("update background");
+        setTranslate(0, yScrollPosition * 0.8, backgroundRef.current);
+      }
+      if (backgroundMaskRef.current) {
+        console.log("update background mask");
+        setTranslate(0, yScrollPosition * 0.8, backgroundMaskRef.current);
+      }
     }
 
-    window.addEventListener('scroll', handleScroll);
+    requestRef.current = requestAnimationFrame(animate);
+  }
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    }
-  });
+  React.useEffect(() => {
+    requestRef.current = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(requestRef.current);
+  }, []);
 
   return (
     <div className="ShopHeader">
@@ -33,8 +45,10 @@ function ShopHeader() {
         <div className="text">
           <h1>Boutique</h1>
         </div>
-        <img className="background" src='images/shop-background.png' alt='Background' ref={backgroundRef} />
-        <img className="background-mask" src='/images/shop-mask-transparent.png' alt='Background' ref={backgroundMaskRef} />
+        <img className="background" src='images/shop-background.png' alt='Background' ref={backgroundRef} onLoad={() => setBackgroundLoaded(true)} />
+        {backgroundLoaded && (
+          <img className="background-mask" src='/images/shop-mask-transparent.png' alt='Background' ref={backgroundMaskRef} />
+        )}
       </section>
     </div>
   );

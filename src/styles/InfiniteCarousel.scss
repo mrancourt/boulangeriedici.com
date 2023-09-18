@@ -4,6 +4,7 @@
   justify-content: center;
   width: 100%;
   overflow: hidden;
+  background: #d8d9de;
 
   .carousel-container {
     display: flex;
@@ -12,11 +13,15 @@
     position: relative;
 
     .carousel-images {
+      margin: 0 auto;
       display: flex;
       will-change: transform;
 
       img {
+        justify-content: space-between;
         max-height: 30vh;
+
+        object-fit: cover;
 
         flex-shrink: 0;
         width: auto;

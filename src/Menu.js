@@ -20,29 +20,30 @@ const Menu = ({activeTab, height}) => {
     style.height = height
   }
 
-  useEffect(() => {
-    const handleScroll = () => {
-      window.addEventListener('scroll', function () {
-        // Disable for mobile
-        if (window.screen.width <= 768) {
-          return
-        }
-
-        const fadeLength = 100;
-        let scrollPos = window.scrollY;
-        let newOpacity = 1 - (scrollPos / fadeLength);
-        if (newOpacity < 0) newOpacity = 0;
-        if (newOpacity > 1) newOpacity = 1;
-        setOpacity(newOpacity);
-      })
-    }
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    }
-  });
+  // TODO: use request animation frame
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     window.addEventListener('scroll', function () {
+  //       // Disable for mobile
+  //       if (window.screen.width <= 768) {
+  //         return
+  //       }
+  //
+  //       const fadeLength = 100;
+  //       let scrollPos = window.scrollY;
+  //       let newOpacity = 1 - (scrollPos / fadeLength);
+  //       if (newOpacity < 0) newOpacity = 0;
+  //       if (newOpacity > 1) newOpacity = 1;
+  //       setOpacity(newOpacity);
+  //     })
+  //   }
+  //
+  //   window.addEventListener('scroll', handleScroll);
+  //
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   }
+  // });
 
   const [menuActive, setMenuActive] = useState(false);
 

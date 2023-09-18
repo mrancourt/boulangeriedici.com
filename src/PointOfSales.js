@@ -44,8 +44,10 @@ function PointOfSales() {
     <div className="PointOfSales">
       <Menu height={100} />
       <Header title="Points de ventes" imagePath="/images/products/miche-blanche.jpg" />
-      <DataDisplay section="Points de vente" />
-      <DataDisplay section="Restaurants" />
+      <div className="points-of-sales-list">
+        <DataDisplay section="Points de vente" />
+        <DataDisplay section="Restaurants" />
+      </div>
     </div>
   );
 }
