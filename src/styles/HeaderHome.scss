@@ -23,9 +23,11 @@
 
     // TODO: fix space between runs
     .marquee-container {
+      //margin-bottom: 10vh;
+      top: 0;
       position: fixed;
       color: #fff;
-      font-size: 10em;
+      font-size: 18vh;
       z-index: 0;
 
       --gap: 1rem;
@@ -41,6 +43,7 @@
       min-width: 100%;
       gap: var(--gap);
       display: none;
+      text-transform: uppercase;
     }
 
     .text-container {
@@ -69,7 +72,7 @@
   @media screen and (min-width: 768px) {
     .marquee-container .marquee-content {
       display: flex;
-      animation: scroll 45s linear infinite;
+      //animation: scroll 300s linear infinite;
     }
   }
 }

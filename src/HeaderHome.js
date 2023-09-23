@@ -42,10 +42,10 @@ function HeaderHome() {
         <img src="./images/home-background.png" className="background-home" alt="Background" ref={backgroundRef}/>
         <div className="marquee-container" ref={marqueeRef}>
           <span className="marquee-content">
-            <h1>Boulangerie d'ici</h1>
+            <h1>Boulangerie d'ici · Boulangerie d'ici · Boulangerie d'ici · Boulangerie d'ici</h1>
           </span>
           <span className="marquee-content" aria-hidden="true">
-            <h1>Boulangerie d'ici</h1>
+            <h1>Boulangerie d'ici · Boulangerie d'ici · Boulangerie d'ici · Boulangerie d'ici</h1>
           </span>
         </div>
         <div className="text-container">
