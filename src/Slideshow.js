@@ -35,7 +35,6 @@ const Slideshow = ({autoScroll, id, prevNextButtons = false, children}) => {
 
     flickity.x = 0;
 
-    window.dispatchEvent(new Event('resize'));
     update();
 
     return () => {
