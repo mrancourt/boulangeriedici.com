@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from "./Home"
 import Contact from "./Contact"
 import Footer from './Footer';
@@ -26,6 +26,7 @@ function App() {
           </Route>
           <Route path="/notre-histoire" element={<History />} />
           <Route path="/contactez-nous" element={<Contact />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       <ContactSection />
       </Router>

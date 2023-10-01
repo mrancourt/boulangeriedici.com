@@ -7,10 +7,13 @@ function ContactForm() {
   const [message, setMessage] = useState('');
   const [success, setSuccess] = useState(null);
   const [error, setError] = useState(null);
+  const [sending, setSending] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const endpoint = 'https://us-central1-boulangerie-d-ici.cloudfunctions.net/sendEmail';
+
+    setSending(true);
 
     fetch(endpoint, {
       method: 'POST',
@@ -23,6 +26,7 @@ function ContactForm() {
         if (response.ok) {
           setSuccess(true);
           setError(null);
+          setSending(false);
           return;
         }
 
@@ -32,8 +36,10 @@ function ContactForm() {
         if (error) {
           setError(error);
         }
+        setSending(false);
       })
       .catch((error) => {
+        setSending(false);
         setError("Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer.");
       });
   };
@@ -58,10 +64,17 @@ function ContactForm() {
             </div>
             <textarea rows={8} className="textarea" placeholder="Question ou commentaire..." onChange={e => setMessage(e.target.value)}/>
             <p className="form-link">
-              <button className="link" type="submit">
-                Envoyer{' '}
-                <img src='/images/right-arrow.png' height={12} alt='Right arrow' />
-              </button>
+
+              {sending ? (
+                <div className="loading-dots">
+                  <span/><span/><span/>
+                </div>
+              ) : (
+                <button className="link" type="submit">
+                  Envoyer{' '}
+                  <img src='/images/right-arrow.png' height={12} alt='Right arrow' />
+                </button>
+              )}
             </p>
           </form>
         )}
