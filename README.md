@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# Boulangerie d'ici
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Firebase
+To deploy functions
+```javascript
+ firebase deploy --only functions
+```
+To set functions configs
+```javascript
+firebase functions:config:set gmail.email="email@domain.com" gmail.password="password"
+```
+
+## Sending email
+For gmail accounts, you will need to turn on 2fa, then request app password.
 
 ## Available Scripts
 
@@ -28,9 +39,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Firebase
-To deploy functions
-```javascript
- firebase deploy --only functions
-```

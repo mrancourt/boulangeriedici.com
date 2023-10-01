@@ -6,12 +6,13 @@
  *
  * See a full list of supported triggers at https://firebase.google.com/docs/functions
  */
-const {https} = require("firebase-functions");
+const {https, config} = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 
-const EMAIL = "071D17560E3DB17F@gmail.com";
+const senderEmail = config().gmail.email;
+const senderPassword = config().gmail.password;
 
 const app = express();
 // Set up CORS with allowed origins
@@ -31,8 +32,8 @@ function isValidEmail(email) {
 const mailTransport = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "071D17560E3DB17F",
-    pass: "xuzx wegh gfdh bwgy",
+    user: senderEmail,
+    pass: senderPassword,
   },
 });
 
@@ -61,19 +62,19 @@ app.post("/", (req, res) => {
   }
 
   const mailOptions = {
-    from: EMAIL,
-    to: EMAIL,
+    from: senderEmail,
+    to: senderEmail,
     replyTo: requestEmail,
     subject: "Nouveau message d’un client",
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; 
                   margin: auto; border: 1px solid #ccc; padding: 15px;">
         <h2 style="color: #333;">Nouveau message de ${requestName}</h2>
-        <p><strong>Email de l'expéditeur:</strong> ${requestEmail}</p>
+        <p><strong>Courriel de l'expéditeur:</strong> ${requestEmail}</p>
         <hr>
         <p style="white-space: pre-wrap;">${message}</p>
         <hr>
-        <p><em>Vous pouvez répondre directement à cet email pour 
+        <p><em>Vous pouvez répondre directement à ce courriel pour
         contacter ${requestName}.</em></p>
       </div>
         `,
