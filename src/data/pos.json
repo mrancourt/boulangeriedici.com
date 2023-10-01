@@ -12,7 +12,7 @@
         "address": "12755 36e Avenue"
       },
       {
-        "name": "IGA extra St-Georges de Beauce",
+        "name": "IGA extra St-Georges",
         "address": "8980 Boulevard Lacroix"
       },
       {
@@ -29,7 +29,7 @@
       },
       {
         "name": "Le Grand Marché",
-        "address": "12120, 1e Avenue"
+        "address": "12120 1e Avenue"
       },
       {
         "name": "Les Roy de la Pomme",
@@ -58,7 +58,7 @@
     ],
     "Lac-Etchemin": [
       {
-        "name": "Metro Lac Etchemin",
+        "name": "Metro Lac-Etchemin",
         "address": "1575 Route 277"
       }
     ],
@@ -89,7 +89,7 @@
     "Saint-Zacharie": [
       {
         "name": "Cado-Gaz inc.",
-        "address": "713, 15e Rue"
+        "address": "713 15e Rue"
       }
     ]
   },

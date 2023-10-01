@@ -21,7 +21,7 @@ function Shop() {
 
   let products = []
   if (Object.keys(filters).includes(filter)) {
-    products = groupBy(allProducts, "categorie")[filter] || allProducts;
+    products = groupBy(allProducts, "category")[filter] || allProducts;
   } else {
     products = Object.values(allProducts)
   }

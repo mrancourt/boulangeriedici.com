@@ -3,50 +3,67 @@
     "id": 1,
     "name": "Pain blanc Traditionnel",
     "description": "Un pain léger et tendre, parfait pour les sandwichs et les toasts. Fabriqué à partir de farine blanche de qualité supérieure.",
+    "weight": 600,
     "image": "/images/products/blanc-traditionnel.jpg",
     "images": [
       "/images/products/blanc-traditionnel.jpg",
       "/images/products/blanc-traditionnel-tranche.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/pain-blanc-traditionnel.svg",
-    "ingredients": "Eau, farine de blé entier, farine blanche non blanchie, sel, levure.",
-    "additionnalInfo": [
-      "Aucun gras ni sucre ajouté",
-      "Peut contenir des traces de noix ou de sésame."
+    "ingredients": "Farine blanche non blanchie, eau, sel, levure.",
+    "additionalInfo": [
+      "Aucun gras ni sucre ajouté.",
+      "Peut contenir des traces de noix ou de sésame.",
+      "Sans agent de conservation."
     ],
-    "categorie": "pains-a-la-levure",
+    "category": "pains-a-la-levure",
     "favorite": true
   },
   {
     "id": 2,
-    "name": "Pain blé Traditionnel",
+    "name": "Pain brun traditionnel",
     "description": "Ce pain offre une croûte croustillante et une mie délicate. Il est idéal pour accompagner les soupes et les ragoûts.",
+    "weight": 675,
     "image": "/images/products/brun-traditionnel.jpg",
     "images": [
       "/images/products/brun-traditionnel.jpg",
       "/images/products/brun-traditionnel-tranche.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/pain-ble-traditionnel.svg",
-    "categorie": "pains-a-la-levure",
+    "ingredients": "Eau, farine de blé entier, farine blanche non blanchie, sel, levure.",
+    "additionalInfo": [
+      "Aucun gras ni sucre ajouté.",
+      "Peut contenir des traces de noix ou de sésame.",
+      "Sans agent de conservation."
+    ],
+    "category": "pains-a-la-levure",
     "favorite": true
   },
   {
     "id": 3,
-    "name": "Pain rainsins canneberges",
+    "name": "Pain raisins canneberges",
     "description": "Un pain sucré savoureux garni de raisins secs et de canneberges, idéal pour le petit-déjeuner et les en-cas d'après-midi.",
-    "image": "/images/products/raisins-cannegerge.jpg",
+    "weight": 530,
+    "image": "/images/products/raisins-canneberge.jpg",
     "images": [
-      "/images/products/raisins-cannegerge.jpg",
+      "/images/products/raisins-canneberge.jpg",
       "/images/products/raisins-canneberge-tranche.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/raisin-canneberges.svg",
-    "categorie": "pains-au-levain",
+    "ingredients": "Farine blanche, eau, raisins Sultana, canneberges, sel, levure",
+    "additionalInfo": [
+      "Aucun gras ni sucre ajouté.",
+      "Peut contenir des traces de noix ou de sésame.",
+      "Sans agent de conservation."
+    ],
+    "category": "pains-au-levain",
     "favorite": true
   },
   {
     "id": 4,
     "name": "Pain 7 grains",
     "description": "Un mélange nutritif de sept grains différents. Un choix judicieux pour un régime équilibré.",
+    "weight": 725,
     "image": "/images/products/7-grains.jpg",
     "images": [
       "/images/products/7-grains.jpg",
@@ -54,37 +71,58 @@
       "/images/products/7-grains-tranche.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/pain-7-grains.svg",
-    "categorie": "pains-au-levain",
+    "ingredients": "Eau, farine de blé tamisée farine blanche non blanchie, levain, graines de lin, farine ou semoule de maïs, graines de tournesol, graines de sésame, millet, graines de pavot, flocons de seigle, flocons d’avoine, sel, levure.",
+    "additionalInfo": [
+      "Aucun gras ni sucre ajouté.",
+      "Peut contenir des traces de noix.",
+      "Sans agent de conservation."
+    ],
+    "category": "pains-au-levain",
     "favorite": true
   },
   {
     "id": 5,
     "name": "Pain aux raisins",
     "description": "Ce pain moelleux est rempli de raisins juteux. Idéal pour le petit-déjeuner ou pour une petite gâterie sucrée.",
+    "weight": 600,
     "image": "/images/products/raisins.jpg",
     "images": [
       "/images/products/raisins.jpg",
       "/images/products/raisins-tranche.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/pain-aux-raisins.svg",
-    "categorie": "pains-au-levain"
+    "ingredients": "Farine tamisée, eau, raisins Sultana, levain, sel, levure, miel.",
+    "additionalInfo": [
+      "Aucun gras ni sucre ajouté.",
+      "Peut contenir des traces de noix ou de sésame.",
+      "Sans agent de conservation."
+    ],
+    "category": "pains-au-levain"
   },
   {
     "id": 6,
     "name": "Pain blé tamisé",
     "description": "Un pain rustique conçu à partir de farine de blé tamisée. C'est le choix parfait pour les sandwichs et les toasts.",
+    "weight": 0,
     "image": "/images/products/ble-tamise.jpg",
     "images": [
       "/images/products/ble-tamise.jpg",
       "/images/products/ble-tamise-tranche.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/ble-tamisee.svg",
-    "categorie": "pains-au-levain"
+    "ingredients": "Farine de blé tamisée, eau, levain, sel, levure.",
+    "additionalInfo": [
+      "Aucun gras ni sucre ajouté.",
+      "Peut contenir des traces de noix ou de sésame.",
+      "Sans agent de conservation."
+    ],
+    "category": "pains-au-levain"
   },
   {
     "id": 7,
-    "name": "Pain de Kamut",
+    "name": "Pain de Kamut®",
     "description": "Un pain sain et savoureux à base de Kamut, une variété de blé ancienne. Une option délicieuse et saine.",
+    "weight": 500,
     "image": "/images/products/kamut.jpg",
     "images": [
       "/images/products/kamut.jpg",
@@ -92,48 +130,77 @@
       "/images/products/kamut-tranche.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/kamut.svg",
-    "categorie": "pains-au-levain"
+    "ingredients": "Eau, farine de Kamut®, farine d’épeautre, levain, sel, levure.",
+    "additionalInfo": [
+      "Aucun gras ni sucre ajouté.",
+      "Peut contenir des traces de noix ou de sésame.",
+      "Sans agent de conservation."
+    ],
+    "category": "pains-au-levain"
   },
   {
     "id": 8,
     "name": "Pain d'épeautre",
     "description": "Un pain riche et savoureux à base de farine d'épeautre. Un choix idéal pour ceux qui cherchent une alternative au blé.",
+    "weight": 620,
     "image": "/images/products/epeautre.jpg",
     "images": [
       "/images/products/epeautre.jpg",
       "/images/products/epeautre-tranche.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/pain-d-epeautre.svg",
-    "categorie": "pains-au-levain"
+    "ingredients": "Farine d’épeautre, eau, levain, sel, levure.",
+    "additionalInfo": [
+      "Aucun gras ni sucre ajouté.",
+      "Peut contenir des traces de noix ou de sésame.",
+      "Sans agent de conservation."
+    ],
+    "category": "pains-au-levain"
   },
   {
     "id": 9,
     "name": "Pain de sarrasin vert",
     "description": "Un pain unique conçu à partir de sarrasin vert. Sans gluten et délicieusement riche en saveurs.",
+    "weight": 500,
     "image": "/images/products/sarrasin-vert.jpg",
     "images": [
       "/images/products/sarrasin-vert.jpg",
       "/images/products/sarrasin-vert-tranche.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/pain-de-sarrasin-vert.svg",
-    "categorie": "pains-au-levain"
+    "ingredients": "Farine blanche non blanchie, eau, levain, farine de sarrasin vert, sel, levure.",
+    "additionalInfo": [
+      "Aucun gras ni sucre ajouté.",
+      "Peut contenir des traces de noix ou de sésame.",
+      "Sans agent de conservation."
+    ],
+    "category": "pains-au-levain"
   },
   {
     "id": 10,
     "name": "Matinal",
     "description": "Un pain léger, idéal pour commencer votre journée. Parfait pour le petit-déjeuner ou pour accompagner votre café.",
+    "weight": 615,
     "image": "/images/products/matinal.jpg",
     "images": [
       "/images/products/matinal.jpg",
       "/images/products/matinal-tranche.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/matinal.svg",
-    "categorie": "pains-au-levain"
+    "ingredients": "Farine blanche non blanchie, eau, levain, blé concassé, semoule de maïs, flocons d'avoine, sel, levure.",
+    "additionalInfo": [
+      "Aucun gras ni sucre ajouté.",
+      "Peut contenir des traces de noix ou de sésame.",
+      "Sans agent de conservation."
+    ],
+    "category": "pains-au-levain"
   },
   {
     "id": 11,
     "name": "Miche blanche",
+    "subtitle": "Cuisson sur sole",
     "description": "Un grand pain avec une mie tendre et une croûte dorée. Parfait pour les grandes familles.",
+    "weight": 700,
     "image": "/images/products/miche-blanche.jpg",
     "images": [
       "/images/products/miche-blanche.jpg",
@@ -141,80 +208,130 @@
       "/images/products/miche-blanche-tranchee.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/miche-blanche.svg",
-    "categorie": "pains-au-levain"
+    "ingredients": "Farine blanche non blanchie, eau, levain, sel, levure.",
+    "additionalInfo": [
+      "Aucun gras ni sucre ajouté.",
+      "Peut contenir des traces de noix ou de sésame.",
+      "Sans agent de conservation."
+    ],
+    "category": "pains-au-levain"
   },
   {
     "id": 12,
     "name": "Miche noix de Grenoble",
+    "subtitle": "Cuisson sur sole",
     "description": "Une miche délicieuse garnie de noix de Grenoble croquantes. Le complément idéal à un plateau de fromages.",
+    "weight": 620,
     "image": "/images/products/miche-noix-de-grenoble.jpg",
     "images": [
       "/images/products/miche-noix-de-grenoble.jpg",
       "/images/products/miche-noix-de-grenoble-tranchee.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/miche-noix-de-grenoble.svg",
-    "categorie": "pains-au-levain"
+    "ingredients": "Farine blanche non blanchie, eau, levain, noix de Grenoble, sel, levure.",
+    "additionalInfo": [
+      "Aucun gras ni sucre ajouté.",
+      "Peut contenir des traces de sésame.",
+      "Sans agent de conservation."
+    ],
+    "category": "pains-au-levain"
   },
   {
     "id": 13,
     "name": "Baguette noix de Grenoble",
     "description": "Une baguette traditionnelle agrémentée de noix de Grenoble pour une touche de croquant et de saveur.",
+    "weight": 210,
     "image": "/images/products/baguette-noix-de-grenoble.jpg",
     "images": [
       "/images/products/baguette-noix-de-grenoble.jpg",
       "/images/products/baguette-noix-grenoble-tranche-2.jpg",
-      "/images/products/baguette-noix-grnoble-tranche.jpg"
+      "/images/products/baguette-noix-grenoble-tranche.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/baguette-noix-grenoble.svg",
-    "categorie": "baguettes",
+    "ingredients": "Farine blanche non blanchie, eau, levain, noix de Grenoble, sel, levure.",
+    "additionalInfo": [
+      "Aucun gras ni sucre ajouté.",
+      "Peut contenir des traces de sésame.",
+      "Sans agent de conservation."
+    ],
+    "category": "baguettes",
     "favorite": true
   },
   {
     "id": 14,
     "name": "Baguette blanche",
+    "subtitle": "Cuisson sur sole",
     "description": "La baguette traditionnelle, avec une croûte croustillante et une mie tendre. L'accompagnement idéal pour tous vos repas.",
+    "weight": 210,
     "image": "/images/products/baguette-blanche.jpg",
     "images": [
       "/images/products/baguette-blanche.jpg",
       "/images/products/baguette-blanche-tranche.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/baguette-blanche.svg",
-    "categorie": "baguettes",
+    "ingredients": "Farine blanche non blanchie, eau, levain, sel, levure.",
+    "additionalInfo": [
+      "Aucun gras ni sucre ajouté.",
+      "Peut contenir des traces de noix ou de sésame.",
+      "Sans agent de conservation."
+    ],
+    "category": "baguettes",
     "favorite": true
   },
   {
     "id": 15,
-    "name": "Pain à soupe",
+    "name": "Petit pain à soupe",
     "description": "Un pain creux parfait pour servir votre soupe préférée. Ajoute une touche créative à vos repas.",
+    "weight": 30,
     "image": "/images/products/petit-pain-à-soupe.jpg",
     "images": [
       "/images/products/petit-pain-à-soupe.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/pain-a-soupe.svg",
-    "categorie": "petits-pains"
+    "ingredients": "Farine blanche non blanchie, eau, sel, levure.",
+    "additionalInfo": [
+      "Aucun gras ni sucre ajouté.",
+      "Peut contenir des traces de noix ou de sésame.",
+      "Sans agent de conservation."
+    ],
+    "category": "petits-pains"
   },
   {
     "id": 16,
     "name": "Pain Hamburger",
     "description": "Des pains à hamburger savoureux, idéals pour accompagner vos burgers faits maison.",
+    "weight": 80,
     "image": "/images/products/hamburger.jpg",
     "images": [
       "/images/products/hamburger.jpg",
       "/images/products/hamburger-paquet-de-6.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/hamburger.svg",
-    "categorie": "petits-pains"
+    "ingredients": "Farine blanche non blanchie, eau, huile de tournesol, sel, levure.",
+    "additionalInfo": [
+      "Aucun gras ni sucre ajouté.",
+      "Peut contenir des traces de noix ou de sésame.",
+      "Sans agent de conservation."
+    ],
+    "category": "petits-pains"
   },
   {
     "id": 17,
     "name": "Pain sous-marin",
     "description": "Pain sous-marin long et moelleux, idéal pour les sandwichs. Transformez votre repas en une expérience délicieuse.",
+    "weight": 110,
     "image": "/images/products/sous-marin.jpg",
     "images": [
       "/images/products/sous-marin.jpg",
       "/images/products/sous-marin-paquet-de-6.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/sous-marin.svg",
-    "categorie": "petits-pains"
+    "ingredients": "Farine blanche non blanchie, eau, huile de tournesol, sel, levure.",
+    "additionalInfo": [
+      "Aucun gras ni sucre ajouté.",
+      "Peut contenir des traces de noix ou de sésame.",
+      "Sans agent de conservation."
+    ],
+    "category": "petits-pains"
   }
 ]

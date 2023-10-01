@@ -42,6 +42,10 @@ const Product = () => {
       <div className="container">
         <h1>{product.name}</h1>
 
+        {product.subtitle && (
+          <em>{product.subtitle}</em>
+        )}
+
         <p>
           {product.description}
         </p>
@@ -51,14 +55,14 @@ const Product = () => {
         <div className="product-info">
           <div className="section">
             <p>
-              <strong>Ingredients</strong><br/>
+              <strong>Ingrédients</strong><br/>
               {product.ingredients}
             </p>
 
             <div>
-              <strong>Information additionnelle</strong><br/>
+              <strong>Informations additionnelles</strong><br/>
               <ul>
-                {product.additionnalInfo?.map((info, i) => (
+                {product.additionalInfo?.map((info, i) => (
                   <li key={`${product.id}-${i}`}>{info}</li>
                 ))}
               </ul>
