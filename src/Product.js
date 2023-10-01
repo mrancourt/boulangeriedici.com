@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import Carousel from './Carousel';
 import Menu from './Menu';
-import InfiniteCarousel from './InfiniteCarousel';
-import { findBy } from './helpers';
-import { useParams } from 'react-router-dom';
+import { findBy, slugify } from './helpers';
+import { Link, useParams } from 'react-router-dom';
 import products from './data/products.json';
 import './styles/Product.scss'
+import Slideshow from './Slideshow';
 
 const ProductNotFound = () => (
   <div>
@@ -14,8 +13,9 @@ const ProductNotFound = () => (
 )
 
 const Product = () => {
-  let { productId } = useParams();
-  let product = findBy(products, "id", parseInt(productId));
+  const { productId } = useParams();
+  const product = findBy(products, "id", parseInt(productId));
+  const relatedProducts = products.filter(product => product.id != productId);
 
   const [showNutritionFacts, setShowNutritionFacts] = useState(false);
 
@@ -29,11 +29,15 @@ const Product = () => {
     <div className="Product">
       <Menu activeTab="nos-produits" height={100} />
 
-      <div className="backdrop-container">
-        <div className="backdrop">
-          <InfiniteCarousel images={product.images} />
-        </div>
-      </div>
+      <Slideshow id="product" autoScroll>
+        {
+          Array.from({ length: 10 }).flatMap((_, outerIndex) =>
+            product.images.map((image, innerIndex) =>
+              <img key={`${image}-${outerIndex}-${innerIndex}`} src={image} alt={image} className="slide" />
+            )
+          )
+        }
+      </Slideshow>
 
       <div className="container">
         <h1>{product.name}</h1>
@@ -88,7 +92,19 @@ const Product = () => {
 
       <div className="hide-on-mobile">
         <h2 className="text-product-suggestions">Vous aimerez aussi</h2>
-        <Carousel products={products} />
+        <Slideshow id="other-products" prevNextButtons>
+          {relatedProducts.map(product => (
+            // TODO: make link work
+            <a href={`/nos-produits/${product.id}/${slugify(product.name)}`} className="carousel-item">
+              <div className="carousel-img-container">
+                <img src={product.image} alt={product.name} />
+              </div>
+              <div className="carousel-item-text">
+                {product.name}
+              </div>
+            </a>
+          ))}
+        </Slideshow>
       </div>
     </div>
   );

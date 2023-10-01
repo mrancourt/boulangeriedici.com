@@ -42,4 +42,80 @@
       display: none;
     }
   }
+
+  #slideshow-product {
+    .slide {
+      height: 350px;
+      max-width: none;
+    }
+  }
+
+  #slideshow-other-products {
+    margin-bottom: 4em;
+
+    .carousel-item {
+      margin: 10px;
+
+      img {
+        max-height: 250px;
+        border-radius: 10px;
+      }
+    }
+
+    .carousel-item-text {
+      text-align: left;
+      font-size: 1em;
+      font-weight: 400;
+    }
+
+    .carousel-img-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+
+      img {
+        transition: transform 0.3s, filter 0.3s;
+
+        &:hover {
+          transform: scale(1.05);
+          filter: brightness(80%);
+        }
+      }
+    }
+  }
+
+  .flickity-button {
+    width: 100%;
+    height: auto;
+    top: 300px;
+  }
+
+  .flickity-prev-next-button.previous {
+    background: url('/images/carousel-left-arrow.png') no-repeat center center;
+    background-size: contain;
+    left: 50%;
+    transform: translateX(-100%);
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+  }
+
+  .flickity-prev-next-button.next {
+    background: url('/images/carousel-right-arrow.png') no-repeat center center;
+    background-size: contain;
+    right: 50%;
+    transform: translateX(100%);
+    width: 40px;
+    height: 40px;
+    margin-right: -20px;
+  }
+
+  .flickity-button-icon {
+    fill: transparent;
+  }
+
+  .flickity-prev-next-button .flickity-button-icon:after {
+    display: none;
+  }
+
 }
