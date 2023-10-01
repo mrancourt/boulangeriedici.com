@@ -1,23 +1,70 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/ContactForm.scss'
 
-// TODO: hookup with firebase mailer?
 function ContactForm() {
+  const [requestEmail, setRequestEmail] = useState('');
+  const [requestName, setRequestName] = useState('');
+  const [message, setMessage] = useState('');
+  const [success, setSuccess] = useState(null);
+  const [error, setError] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const endpoint = 'https://us-central1-boulangerie-d-ici.cloudfunctions.net/sendEmail';
+
+    fetch(endpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ requestEmail, requestName, message })
+    })
+      .then((response) => {
+        if (response.ok) {
+          setSuccess(true);
+          setError(null);
+          return;
+        }
+
+        return response.text();
+      })
+      .then((error) => {
+        if (error) {
+          setError(error);
+        }
+      })
+      .catch((error) => {
+        setError("Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer.");
+      });
+  };
+
   return (
     <div className="ContactForm">
       <div className="container">
-      <form className="form-container">
-        <div className="input-wrapper">
-          <input type="text" placeholder="Nom..." />
-            <input type="text" placeholder="Courriel..." />
+        <div>
+          {error && <div className="message error">{error}</div>}
         </div>
-        <textarea rows={8} className="textarea" placeholder="Question ou commentaire..."/>
-        <p className="form-link">
-          <a className="link" href='/contactez-nous'>Envoyer{' '}
-            <img src='/images/right-arrow.png' height={12} alt='Right arrow' />
-          </a>
-        </p>
-      </form>
+        {success ? (
+          <div className="success-message text-center">
+            <h3>Merci de nous avoir contactés</h3>
+            Nous avons bien reçu votre message et nous vous répondrons dans les plus brefs délais.
+            <div className="success-icon"><img src='/images/success_icon.png' alt='success-icon' /></div>
+          </div>
+        ) : (
+          <form className="form-container" onSubmit={handleSubmit}>
+            <div className="input-wrapper">
+              <input type="text" placeholder="Nom..." onChange={e => setRequestName(e.target.value)} />
+              <input type="text" placeholder="Courriel..." onChange={e => setRequestEmail(e.target.value)} />
+            </div>
+            <textarea rows={8} className="textarea" placeholder="Question ou commentaire..." onChange={e => setMessage(e.target.value)}/>
+            <p className="form-link">
+              <button className="link" type="submit">
+                Envoyer{' '}
+                <img src='/images/right-arrow.png' height={12} alt='Right arrow' />
+              </button>
+            </p>
+          </form>
+        )}
       </div>
     </div>
   );
