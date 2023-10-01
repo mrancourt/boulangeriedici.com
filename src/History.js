@@ -41,15 +41,15 @@ function History() {
         <h3>Du rang des carreaux, à  Saint-Come</h3>
 
         <p>
-          Fondée en 1997 par Jean-Marc Rancourt et Louise Boily, la Boulangerie d'ici raconte une histoire de passion familiale. Poussé par l'envie de nouveauté, Jean-Marc s'est formé lors d'un stage de trois jours dans une boulangerie de Sherbrooke, qui, malheureusement, n'existe plus aujourd'hui. De retour à Saint-philibert, armé d'un pétrin, d'un four et de quelques fournitures essentielles, il a commencé son aventure.
+          Fondée en 1997 par Jean-Marc Rancourt et Louise Boily, la Boulangerie d'ici raconte une histoire de passion familiale. Poussé par l'envie de nouveauté, Jean-Marc s'est formé lors d'un stage de trois jours dans une boulangerie de Sherbrooke, qui, malheureusement, n'existe plus aujourd'hui. De retour à Saint-Philibert, armé d'un pétrin, d'un four et de quelques fournitures essentielles, il a commencé son aventure.
         </p>
 
         <h4>
-          Petit à petit il acquit de l’expérience et de nouveau client.
+          Petit à petit, il acquit de l’expérience et attira de nouveaux clients.
         </h4>
 
         <p>
-          Avec le temps, l'expérience est venue, et avec elle, une clientèle fidèle et croissante. Après 22 ans de dévouement, de pain confectionné avec amour et passion, Jean-Marc a confié les rênes de la boulangerie à son fils, Étienne Rancourt.
+          Avec le temps, l'expérience s'est accumulée, et avec elle, une clientèle fidèle et croissante. Après 22 ans de dévouement, de pain confectionné avec amour et passion, Jean-Marc a confié les rênes de la boulangerie à son fils, Étienne Rancourt.
         </p>
 
         <p>

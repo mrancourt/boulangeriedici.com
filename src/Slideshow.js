@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import './styles/Slideshow.scss';
 
 const Slideshow = ({autoScroll, id, prevNextButtons = false, children}) => {
   useEffect(() => {
@@ -39,7 +38,6 @@ const Slideshow = ({autoScroll, id, prevNextButtons = false, children}) => {
     window.dispatchEvent(new Event('resize'));
     update();
 
-    // Cleanup
     return () => {
       flickity.destroy();
     };

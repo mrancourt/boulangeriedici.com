@@ -15,10 +15,10 @@ function Footer() {
               <a href='/notre-histoire'>Notre Histoire</a>
             </li>
             <li>
-              <a href='/nos-produits'>Points de vente</a>
+              <a href='/nos-produits'>Boutique</a>
             </li>
             <li>
-              <a href='/nos-produits'>Boutique</a>
+              <a href='/nos-produits'>Points de vente</a>
             </li>
             <li>
               <a href='/contact'>Contact</a>

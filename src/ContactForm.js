@@ -13,7 +13,7 @@ function ContactForm() {
         </div>
         <textarea rows={8} className="textarea" placeholder="Question ou commentaire..."/>
         <p className="form-link">
-          <a className="link" href='/notre-histoire'>Envoyer{' '}
+          <a className="link" href='/contactez-nous'>Envoyer{' '}
             <img src='/images/right-arrow.png' height={12} alt='Right arrow' />
           </a>
         </p>

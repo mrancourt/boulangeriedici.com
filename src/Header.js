@@ -1,7 +1,6 @@
 import './styles/Header.scss'
 import React from 'react';
 
-// TODO: redo this
 function Header({title, subTitle, imagePath}) {
   return (
     <div className="Header">

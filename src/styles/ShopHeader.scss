@@ -46,7 +46,7 @@
     width: 100%;
     height: 60%;
     background: linear-gradient(to bottom, #cccccc, transparent);
-    z-index: 2;  /* This ensures the gradient is below the text but above the image. */
+    z-index: 2;
   }
 
   section::after {

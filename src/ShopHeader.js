@@ -1,7 +1,5 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import './styles/ShopHeader.scss'
-
-// TODO: optimize performance around scroll handler
 
 function ShopHeader() {
   let backgroundRef = useRef(null);

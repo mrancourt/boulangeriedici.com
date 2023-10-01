@@ -9,8 +9,6 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 
-  min-height: 1500px; // TODO: remove when real content
-
   a {
     color: #000;
     text-decoration: none;
@@ -42,8 +40,6 @@ body {
   }
 
   .container {
-    //max-width: 1200px;
-    //margin: auto;
     padding: 25px;
   }
 }

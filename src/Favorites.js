@@ -16,9 +16,6 @@ function Favorites() {
             <div className={`grid-item ${i > 2 ? 'hide-on-mobile' : ''}`}>
               <div className="img-container">
                 <img src={favorite.image} alt={favorite.name} />
-                <div className="hover-icon">
-                  {/*<img src='/images/right-arrow.png' alt='' />*/}
-                </div>
               </div>
               <div className="favorites-item-text">
                 {favorite.name}

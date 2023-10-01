@@ -12,9 +12,6 @@ function Products({products}) {
             <div className="grid-item" >
               <div className="img-container">
                 <img src={product.image} alt={product.name} />
-                <div className="hover-icon">
-                  {/*<img src='/images/right-arrow.png' alt='' />*/}
-                </div>
               </div>
               <div className="favorites-item-text">
                 {product.name}

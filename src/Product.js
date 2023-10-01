@@ -15,7 +15,7 @@ const ProductNotFound = () => (
 const Product = () => {
   const { productId } = useParams();
   const product = findBy(products, "id", parseInt(productId));
-  const relatedProducts = products.filter(product => product.id != productId);
+  const relatedProducts = products.filter(product => product.id !== productId);
 
   const [showNutritionFacts, setShowNutritionFacts] = useState(false);
 
