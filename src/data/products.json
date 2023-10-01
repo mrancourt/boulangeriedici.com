@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Pain blanc Traditionnel",
-    "description": "Un pain léger et tendre, parfait pour les sandwichs et les toasts. Fabriqué à partir de farine blanche de qualité supérieure.",
+    "description": "Un pain léger et tendre, le rendent polyvalent pour toutes occasions. Fabriqué à partir de farine blanche de qualité supérieure.",
     "weight": 600,
     "image": "/images/products/blanc-traditionnel.jpg",
     "images": [
@@ -42,7 +42,7 @@
   {
     "id": 3,
     "name": "Pain raisins canneberges",
-    "description": "Un pain sucré savoureux garni de raisins secs et de canneberges, idéal pour le petit-déjeuner et les en-cas d'après-midi.",
+    "description": "La douceur des raisins combinée à la saveur acidulée des canneberges pour une expérience gustative délicieuse.",
     "weight": 530,
     "image": "/images/products/raisins-canneberge.jpg",
     "images": [
@@ -62,7 +62,7 @@
   {
     "id": 4,
     "name": "Pain 7 grains",
-    "description": "Un mélange nutritif de sept grains différents. Un choix judicieux pour un régime équilibré.",
+    "description": "Un mélange harmonieux de sept grains, offrant une texture et un goût riches et satisfaisants.",
     "weight": 725,
     "image": "/images/products/7-grains.jpg",
     "images": [
@@ -83,7 +83,7 @@
   {
     "id": 5,
     "name": "Pain aux raisins",
-    "description": "Ce pain moelleux est rempli de raisins juteux. Idéal pour le petit-déjeuner ou pour une petite gâterie sucrée.",
+    "description": "Débordant de raisins naturellement sucrés, ce pain est parfait pour le déjeuner ou pour une petite gâterie sucrée.",
     "weight": 600,
     "image": "/images/products/raisins.jpg",
     "images": [
@@ -121,7 +121,7 @@
   {
     "id": 7,
     "name": "Pain de Kamut®",
-    "description": "Un pain sain et savoureux à base de Kamut, une variété de blé ancienne. Une option délicieuse et saine.",
+    "description": "Un pain nutritif et savoureux à base de Kamut, une variété de blé ancienne. Une option délicieuse et saine.",
     "weight": 500,
     "image": "/images/products/kamut.jpg",
     "images": [
@@ -160,7 +160,7 @@
   {
     "id": 9,
     "name": "Pain de sarrasin vert",
-    "description": "Un pain unique conçu à partir de sarrasin vert. Sans gluten et délicieusement riche en saveurs.",
+    "description": "Un pain unique conçu à partir de sarrasin vert riche en saveurs.",
     "weight": 500,
     "image": "/images/products/sarrasin-vert.jpg",
     "images": [
@@ -179,7 +179,7 @@
   {
     "id": 10,
     "name": "Matinal",
-    "description": "Un pain léger, idéal pour commencer votre journée. Parfait pour le petit-déjeuner ou pour accompagner votre café.",
+    "description": "Le compagnon parfait pour bien commencer la journée. Parfait pour le déjeuner ou pour accompagner votre café.",
     "weight": 615,
     "image": "/images/products/matinal.jpg",
     "images": [
@@ -199,7 +199,7 @@
     "id": 11,
     "name": "Miche blanche",
     "subtitle": "Cuisson sur sole",
-    "description": "Un grand pain avec une mie tendre et une croûte dorée. Parfait pour les grandes familles.",
+    "description": "Un grand classique, la miche blanche est polyvalente et toujours appréciée à la table.",
     "weight": 700,
     "image": "/images/products/miche-blanche.jpg",
     "images": [
@@ -220,7 +220,7 @@
     "id": 12,
     "name": "Miche noix de Grenoble",
     "subtitle": "Cuisson sur sole",
-    "description": "Une miche délicieuse garnie de noix de Grenoble croquantes. Le complément idéal à un plateau de fromages.",
+    "description": "Un pain qui reflète la richesse des saveurs, où chaque noix de Grenoble croquantes ajoute une touche délicieusement audacieuse.",
     "weight": 620,
     "image": "/images/products/miche-noix-de-grenoble.jpg",
     "images": [
@@ -261,7 +261,7 @@
     "id": 14,
     "name": "Baguette blanche",
     "subtitle": "Cuisson sur sole",
-    "description": "La baguette traditionnelle, avec une croûte croustillante et une mie tendre. L'accompagnement idéal pour tous vos repas.",
+    "description": "La baguette blanche, un classique intemporel, toujours prête à sublimer vos repas et vos moments de partage.",
     "weight": 210,
     "image": "/images/products/baguette-blanche.jpg",
     "images": [
@@ -281,7 +281,7 @@
   {
     "id": 15,
     "name": "Petit pain à soupe",
-    "description": "Un pain creux parfait pour servir votre soupe préférée. Ajoute une touche créative à vos repas.",
+    "description": "Le choix idéal pour accompagner vos soupes et ragoûts, absorbant et savoureux.",
     "weight": 30,
     "image": "/images/products/petit-pain-à-soupe.jpg",
     "images": [
@@ -318,7 +318,7 @@
   {
     "id": 17,
     "name": "Pain sous-marin",
-    "description": "Pain sous-marin long et moelleux, idéal pour les sandwichs. Transformez votre repas en une expérience délicieuse.",
+    "description": "Enveloppant délicatement vos ingrédients préférés, ce pain offre une base parfaite pour un sous-marin succulent.",
     "weight": 110,
     "image": "/images/products/sous-marin.jpg",
     "images": [
