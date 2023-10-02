@@ -21,7 +21,7 @@ function Footer() {
               <a href='/nos-produits'>Points de vente</a>
             </li>
             <li>
-              <a href='/contact'>Contact</a>
+              <a href='/contactez-nous'>Contact</a>
             </li>
           </ul>
         </div>
@@ -30,10 +30,10 @@ function Footer() {
           1251 Route du Président-Kennedy <br/>
           Saint-Côme-Linière, QC G0M 1J0 <br/>
           <p>
-            boulangeriedici@gmail.com <br/>
+            <a href="mailto:boulangeriedici@gmail.com">boulangeriedici@gmail.com</a> <br/>
           </p>
           <p>
-            1-418-685-4650
+            <a href="tel:1-833-685-7246">1-418-685-4650</a>
           </p>
         </div>
         <div className="footer-section">

@@ -3,6 +3,7 @@ import React from 'react';
 import Menu from './Menu';
 import data from './data/pos.json';
 import Header from './Header';
+import HeroHeader from './HeroHeader';
 
 function renderSection(city, section) {
   return (
@@ -42,8 +43,8 @@ function DataDisplay({ section }) {
 function PointOfSales() {
   return (
     <div className="PointOfSales">
-      <Menu height={100} />
-      <Header title="Points de vente" imagePath="/images/products/miche-blanche.jpg" />
+      <Menu activeTab="contact" height={100} />
+      <HeroHeader image="/images/unsplash2.jpg" heroTitle="Points de vente" />
       <div className="points-of-sales-list">
         <DataDisplay section="Points de vente" />
         <DataDisplay section="Restaurants" />

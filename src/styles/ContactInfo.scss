@@ -1,10 +1,13 @@
 .ContactInfo {
+  position: relative;
+  z-index: 10;
+
   max-width: 900px;
   margin: 0 auto;
-  padding: 2em;
+  padding-bottom: 2em;
 
   display: flex;
-  gap: 20px;;
+  gap: 20px;
 
   .map-container {
     margin: 2em;

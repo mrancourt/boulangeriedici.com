@@ -20,12 +20,10 @@ function ShopHeader() {
       xScrollPosition = window.scrollX;
       yScrollPosition = window.scrollY;
       if (backgroundRef.current) {
-        console.log("update background");
-        setTranslate(0, yScrollPosition * 0.8, backgroundRef.current);
+        setTranslate(0, yScrollPosition * .9, backgroundRef.current);
       }
       if (backgroundMaskRef.current) {
-        console.log("update background mask");
-        setTranslate(0, yScrollPosition * 0.8, backgroundMaskRef.current);
+        setTranslate(0, yScrollPosition * .9, backgroundMaskRef.current);
       }
     }
 

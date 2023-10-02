@@ -3,13 +3,13 @@ import ContactInfo from './ContactInfo';
 import ContactForm from './ContactForm';
 import Menu from './Menu';
 import './styles/Contact.scss'
-import Header from './Header';
+import HeroHeader from './HeroHeader';
 
 function Contact() {
   return (
     <div className="Contact">
       <Menu activeTab="contact" height={100} />
-      <Header title="Contactez-nous" imagePath="/images/products/hamburger.jpg" />
+      <HeroHeader image="/images/unsplash1.jpg" heroTitle="Contactez-nous" />
       <ContactInfo />
       <ContactForm />
     </div>

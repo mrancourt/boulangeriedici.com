@@ -1,12 +1,19 @@
 # Boulangerie d'ici
 
 ## Firebase
+
+To deploy a temporary staging build
+```bash
+ npm run build // ensure you have a fresh build
+ firebase hosting:channel:deploy staging --expires 1d
+```
+
 To deploy functions
-```javascript
+```bash
  firebase deploy --only functions
 ```
 To set functions configs
-```javascript
+```bash
 firebase functions:config:set gmail.email="email@domain.com" gmail.password="password"
 ```
 

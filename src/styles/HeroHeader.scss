@@ -1,0 +1,72 @@
+.HeroHeader {
+  position: relative;
+  top: -110px; // offset header
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  .background {
+    z-index: 1;
+  }
+
+  .background-mask {
+    z-index: 2;
+  }
+
+  // TODO: replace all other parallax text by position abs to remove the need for the relative hack
+  .text {
+    text-align: center;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: 0;
+    right: 0;
+    font-size: clamp(2.5em, 5vw, 4em);
+    color: #fff;
+    text-transform: uppercase;
+    max-height: 70vh;
+    z-index: 2;
+    // for lighter backgrounds
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to bottom, #cccccc, transparent);
+    z-index: 2;
+  }
+
+  section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to top, rgba(51, 51, 51, .3), transparent);
+    z-index: 2;
+  }
+
+  @media screen and (min-width: 768px) {
+    .text {
+      letter-spacing: .6em;
+    }
+  }
+}
