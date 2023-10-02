@@ -43,7 +43,7 @@ function DataDisplay({ section }) {
 function PointOfSales() {
   return (
     <div className="PointOfSales">
-      <Menu activeTab="contact" height={100} />
+      <Menu activeTab="points-de-vente" height={100} />
       <HeroHeader image="/images/unsplash2.jpg" heroTitle="Points de vente" />
       <div className="points-of-sales-list">
         <DataDisplay section="Points de vente" />

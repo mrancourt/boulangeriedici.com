@@ -7,7 +7,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 25px 50px;
-    font-size: clamp(.7em, 1.5vw, 1em);
+    font-size: clamp(.7em, 1.5vw, 1.1em);
+    font-weight: 500;
   }
 
   .logo {
@@ -33,7 +34,16 @@
   }
 
   .menu-link {
-    padding: 0 10px;
+    padding: 0 15px;
+
+    &.active a {
+      border-bottom: 2px solid #000;
+      padding-bottom: 1px;
+
+      &:hover {
+        border-color: #07477d;
+      }
+    }
   }
 
   .menu-link a {
@@ -52,6 +62,12 @@
     width: 40px;
     margin: 5px;
     transition: 0.4s;
+  }
+
+  @media screen and (max-width: 900px) {
+    .menu-link {
+      padding: 0 10px;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -83,7 +99,11 @@
     .menu-link {
       width: 100%;
       text-align: center;
-      padding: 0;
+
+      &.active a {
+        border-bottom: none;
+        padding: 20px;
+      }
     }
 
     .menu-link:hover {

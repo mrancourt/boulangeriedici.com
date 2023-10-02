@@ -17,7 +17,7 @@ function App() {
         <ScrollToTop exceptPrefixes={["nos-produits/categorie"]} />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/points-de-ventes" element={<PointOfSales />} />
+          <Route path="/points-de-vente" element={<PointOfSales />} />
           <Route path="/nos-produits/:productId" element={<Product />} />
           <Route path="/nos-produits/:productId/:name" element={<Product />} />
           <Route path="/nos-produits" element={<Shop />}>

@@ -4,7 +4,7 @@ import './styles/Menu.scss'
 const tabs = {
   "notre-histoire": "Notre Histoire",
   "nos-produits": "Boutique",
-  "points-de-ventes": "Points de vente",
+  "points-de-vente": "Points de vente",
   "contactez-nous": "Contactez-nous",
 }
 

@@ -8,7 +8,7 @@ import HeroHeader from './HeroHeader';
 function Contact() {
   return (
     <div className="Contact">
-      <Menu activeTab="contact" height={100} />
+      <Menu activeTab="contactez-nous" height={100} />
       <HeroHeader image="/images/unsplash1.jpg" heroTitle="Contactez-nous" />
       <ContactInfo />
       <ContactForm />
