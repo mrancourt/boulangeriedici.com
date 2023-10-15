@@ -20,7 +20,7 @@ function Contact() {
       windowHeight = window.innerHeight;
 
       let scrollPercent = (yScrollPosition / (documentHeight - windowHeight)) * 100;
-      let variant = (20 * scrollPercent / 100);
+      let variant = (40 * scrollPercent / 100);
       let bgSize = `${100 + variant}%`;
       
       if (backgroundRef.current) {

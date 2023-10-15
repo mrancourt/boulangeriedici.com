@@ -38,8 +38,14 @@
     }
 
     .summary-text {
-      max-width: 390px;
+      max-width: 400px;
     }
+  }
 
+  @media screen and (min-width: 1200px) {
+    .summary-text {
+      padding: 2em 0;
+      max-width: 500px;
+    }
   }
 }

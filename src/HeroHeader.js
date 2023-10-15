@@ -21,7 +21,6 @@ function HeroHeader({image, heroTitle}) {
         setTranslate(0, yScrollPosition * .8, backgroundRef.current);
       }
       if(textRef.current) {
-        console.log("textref");
         setTranslate(0, yScrollPosition * .45, textRef.current);
       }
     }

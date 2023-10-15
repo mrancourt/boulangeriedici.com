@@ -4,6 +4,10 @@
       {
         "name": "Les Marchés Tradition",
         "address": "940 Rue Principale"
+      },
+      {
+        "name": "Verger L'argousière",
+        "address": "1387 RG Jersey S"
       }
     ],
     "Saint-Georges": [
@@ -36,12 +40,16 @@
         "address": "1020 Av. de Saint-Jean-de-la-Lande"
       },
       {
-        "name": "Naturosanté",
+        "name": "Naturo Santé",
         "address": "8585 Boulevard Lacroix"
       },
       {
-        "name": "Metro Laval Veilleux",
+        "name": "Métro Laval Veilleux",
         "address": "17850 Boulevard Lacroix"
+      },
+      {
+        "name": "Ôtres Choses",
+        "address": "12367 1e Avenue"
       }
     ],
     "Saint-Prosper": [
@@ -58,7 +66,7 @@
     ],
     "Lac-Etchemin": [
       {
-        "name": "Metro Lac-Etchemin",
+        "name": "Métro Lac-Etchemin",
         "address": "1575 Route 277"
       }
     ],
@@ -76,8 +84,14 @@
     ],
     "Saint-Joseph": [
       {
-        "name": "IGA Marché Pierre Jobidon",
+        "name": "IGA Saint-Joseph",
         "address": "1021 Avenue du Palais #101"
+      }
+    ],
+    "Saint-Robert-Bellarmin": [
+      {
+        "name": "Vert le détour local",
+        "address": "15 Rue Lachance"
       }
     ],
     "Saint-Victor": [
@@ -97,17 +111,11 @@
     "Saint-Georges": [
       {
         "name": "Restaurant 1668",
-        "address": "12120 1e Avenue"
+        "address": "18255 Boulevard Lacroix"
       },
       {
         "name": "VG Café",
         "address": "11780 1e Avenue"
-      }
-    ],
-    "Saint-Côme-Linière": [
-      {
-        "name": "Resto-Bar Le Brûlé",
-        "address": "1327 Rue Principale"
       }
     ]
   }

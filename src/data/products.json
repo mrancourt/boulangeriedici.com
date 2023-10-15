@@ -56,7 +56,7 @@
       "Peut contenir des traces de noix ou de sésame.",
       "Sans agent de conservation."
     ],
-    "category": "pains-au-levain",
+    "category": "pains-a-la-levure",
     "favorite": true
   },
   {
@@ -121,7 +121,7 @@
   {
     "id": 7,
     "name": "Pain de Kamut®",
-    "description": "Un pain nutritif et savoureux à base de Kamut, une variété de blé ancienne. Une option délicieuse et saine.",
+    "description": "Un pain nutritif et savoureux à base de Kamut et d’épeautre, des variétés de blés anciens. Une option délicieuse et saine.",
     "weight": 500,
     "image": "/images/products/kamut.jpg",
     "images": [
@@ -136,7 +136,8 @@
       "Peut contenir des traces de noix ou de sésame.",
       "Sans agent de conservation."
     ],
-    "category": "pains-au-levain"
+    "category": "pains-au-levain",
+    "favorite": true
   },
   {
     "id": 8,
@@ -214,7 +215,8 @@
       "Peut contenir des traces de noix ou de sésame.",
       "Sans agent de conservation."
     ],
-    "category": "pains-au-levain"
+    "category": "pains-au-levain",
+    "favorite": true
   },
   {
     "id": 12,
@@ -254,8 +256,7 @@
       "Peut contenir des traces de sésame.",
       "Sans agent de conservation."
     ],
-    "category": "baguettes",
-    "favorite": true
+    "category": "baguettes"
   },
   {
     "id": 14,
@@ -275,8 +276,7 @@
       "Peut contenir des traces de noix ou de sésame.",
       "Sans agent de conservation."
     ],
-    "category": "baguettes",
-    "favorite": true
+    "category": "baguettes"
   },
   {
     "id": 15,
@@ -294,7 +294,8 @@
       "Peut contenir des traces de noix ou de sésame.",
       "Sans agent de conservation."
     ],
-    "category": "petits-pains"
+    "category": "petits-pains",
+    "favorite": true
   },
   {
     "id": 16,

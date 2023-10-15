@@ -16,7 +16,7 @@ const senderPassword = config().gmail.password;
 
 const app = express();
 // Set up CORS with allowed origins
-app.use(cors({origin: ["https://boulangeriedici.com", "http://localhost:3000", "http://localhost:3001"]}));
+app.use(cors({origin: ["https://boulangeriedici.com", "http://localhost:3000", "http://localhost:3001", "https://boulangerie-d-ici--staging-0npthe2z.web.app"]}));
 
 /**
  * Returns if an email is valid

@@ -18,13 +18,14 @@ function History() {
         {/*TODO: fix collage mobile and whatnot */}
         <Collage
           images={[
-            "/images/jm-transparent2.png",
-            "/images/famille-boulange.jpg",
-            // "/images/history-image3.png",
+            "/images/history-image1.png",
+            "/images/history-image2.png",
+            "/images/history-image3.png",
           ]}
           styles={[
-            {top: 900, zIndex: 2},
-            {top: 900, zIndex: 1, borderRadius: 10}
+            {top: 1200, zIndex: 1},
+            {top: 1200, zIndex: 2},
+            {top: 1200, zIndex: 3}
           ]}
         />
 
@@ -53,7 +54,7 @@ function History() {
         </p>
 
         <p>
-          Depuis cette transition en 2019, je m'engage, en tant qu'Étienne, à perpétuer cet héritage. Je me suis donné pour mission de vous proposer le meilleur pain, élaboré à partir d'ingrédients naturels et façonné avec cœur et passion. Aujourd'hui, la Boulangerie d'ici est fière de servir ses délices dans 19 points de vente répartis dans 9 villes et villages.
+          Depuis cette transition en 2019, je m'engage, en tant qu'Étienne, à perpétuer cet héritage. Je me suis donné pour mission de vous proposer le meilleur pain, élaboré à partir d'ingrédients naturels et façonné avec cœur et passion. Aujourd'hui, la Boulangerie d'ici est fière de servir ses délices dans 23 points de vente répartis dans 11 villes et villages.
         </p>
 
       </div>
