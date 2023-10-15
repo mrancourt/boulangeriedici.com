@@ -103,7 +103,8 @@ const Product = () => {
             // TODO: make link work
             <a href={`/nos-produits/${product.id}/${slugify(product.name)}`} className="carousel-item">
               <div className="carousel-img-container">
-                <img src={product.image} alt={product.name} />
+                <img src={product.images[0]} alt={product.name} />
+                <img src={product.images[1]} alt={product.name} />
               </div>
               <div className="carousel-item-text">
                 {product.name}

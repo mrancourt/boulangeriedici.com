@@ -11,7 +11,8 @@ function Products({products}) {
           <Link key={product.id} to={`/nos-produits/${product.id}/${slugify(product.name)}`} state={{ from: 'origin' }}>
             <div className="grid-item" >
               <div className="img-container">
-                <img src={product.image} alt={product.name} />
+                <img src={product.images[0]} alt={product.name} />
+                <img src={product.images[1]} alt={product.name} />
               </div>
               <div className="favorites-item-text">
                 {product.name}

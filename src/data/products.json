@@ -124,10 +124,11 @@
     "description": "Un pain nutritif et savoureux à base de Kamut et d’épeautre, des variétés de blés anciens. Une option délicieuse et saine.",
     "weight": 500,
     "image": "/images/products/kamut.jpg",
+    "imageSecondary": "/images/products/kamut.jpg",
     "images": [
       "/images/products/kamut.jpg",
-      "/images/products/kamut-tranche-2.jpg",
-      "/images/products/kamut-tranche.jpg"
+      "/images/products/kamut-tranche.jpg",
+      "/images/products/kamut-tranche-2.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/kamut.svg",
     "ingredients": "Eau, farine de Kamut®, farine d’épeautre, levain, sel, levure.",
@@ -205,8 +206,8 @@
     "image": "/images/products/miche-blanche.jpg",
     "images": [
       "/images/products/miche-blanche.jpg",
-      "/images/products/miche-blanche-2.jpg",
-      "/images/products/miche-blanche-tranchee.jpg"
+      "/images/products/miche-blanche-tranchee-2.jpg",
+      "/images/products/miche-blanche-2-copy.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/miche-blanche.svg",
     "ingredients": "Farine blanche non blanchie, eau, levain, sel, levure.",
@@ -285,6 +286,7 @@
     "weight": 30,
     "image": "/images/products/petit-pain-à-soupe.jpg",
     "images": [
+      "/images/products/petit-pain-à-soupe.jpg",
       "/images/products/petit-pain-à-soupe.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/pain-a-soupe.svg",
@@ -324,7 +326,7 @@
     "image": "/images/products/sous-marin.jpg",
     "images": [
       "/images/products/sous-marin.jpg",
-      "/images/products/sous-marin-paquet-de-6.jpg"
+      "/images/products/sous-marin-paquet-de-6-2.jpg"
     ],
     "nutritionFacts": "/images/nutrition-facts/sous-marin.svg",
     "ingredients": "Farine blanche non blanchie, eau, huile de tournesol, sel, levure.",

@@ -15,7 +15,8 @@ function Favorites() {
           <Link key={favorite.id} to={`/nos-produits/${favorite.id}/${slugify(favorite.name)}`}>
             <div className={`grid-item ${i > 2 ? 'hide-on-mobile' : ''}`}>
               <div className="img-container">
-                <img src={favorite.image} alt={favorite.name} />
+                <img src={favorite.images[0]} alt={favorite.name} />
+                <img src={favorite.images[1]} alt={favorite.name} />
               </div>
               <div className="favorites-item-text">
                 {favorite.name}

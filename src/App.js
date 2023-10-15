@@ -11,10 +11,11 @@ import ScrollToTop from './ScrollToTop';
 import PointOfSales from './PointOfSales';
 
 function App() {
-  var scale = 'scale(1)';
-  document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
-  document.body.style.msTransform =   scale;       // IE 9
-  document.body.style.transform = scale;     // General
+  // This breaks the nice scroling, double check if needed for mobile
+  // var scale = 'scale(1)';
+  // document.body.style.webkitTransform = scale;
+  // document.body.style.msTransform = scale;
+  // document.body.style.transform = scale;
 
   return (
     <>
