@@ -23,7 +23,7 @@ function HistoryShort() {
 
         <div className="summary-text">
           Géré par une famille de boulangers se concentrant
-          sur une experience artisanale par excellence
+          sur une expérience artisanale par excellence
           <br/>
           <a className="link" href='/notre-histoire'>Notre Histoire{' '}
             <img src='/images/right-arrow.png' height={12} alt='Right arrow' />

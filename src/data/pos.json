@@ -46,10 +46,6 @@
       {
         "name": "Métro Laval Veilleux",
         "address": "17850 Boulevard Lacroix"
-      },
-      {
-        "name": "Ôtres Choses",
-        "address": "12367 1e Avenue"
       }
     ],
     "Saint-Prosper": [
@@ -109,6 +105,10 @@
   },
   "Restaurants": {
     "Saint-Georges": [
+      {
+        "name": "Ôtres Choses",
+        "address": "12367 1e Avenue"
+      },
       {
         "name": "Restaurant 1668",
         "address": "18255 Boulevard Lacroix"
