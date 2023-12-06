@@ -32,7 +32,7 @@ function History() {
         <div className="summary-text">
           La Boulangerie d’ici,
           fondée en 1997 par
-          mon Père Jean-Marc
+          mon père Jean-Marc
           Rancourt et ma mère
           Louise Boily.
           <br/>
